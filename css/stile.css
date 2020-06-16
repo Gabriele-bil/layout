@@ -1,0 +1,399 @@
+p.mediaquery{position: fixed; background:#fff; z-index: 9999;}
+/* ----- REGOLE GENERALI -----*/
+div.container-fluid.header{background-image: url('../img/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 80vh;}
+main, section, header{overflow: hidden;}
+a:hover{text-decoration:none; transition: color 0.4s ease;}
+/* ----- FINE REGOLE GENERALI -----*/
+
+
+/* ----- RISCRITTURA BOOTSTRAP -----*/
+div.container,div.container-fluid{padding: 0;}
+/* ----- FINE RISCRITTURA BOOTSTRAP -----*/
+
+
+/* ----- HEADER -----*/
+.sticky{position: fixed; top:0; width: 100%; background: #000;}
+.sticky + section.hero {padding-top: 60px;}
+header{padding:30px 0; position: absolute; width: 100%; top:0; z-index: 999;}
+header nav, header nav ul{display: inline}
+
+/* Button Responsive Menu */
+.btn-responsive-menu{display: none; float: right; padding:5px; cursor:pointer; margin: 0px 20px 0 0; color: #ffffff;}
+.icon-bar{display: block; width: 18px; height: 2px; margin:5px; background-color: #f5f5f5;}
+.show{display:block!important}
+header div.btn-responsive-menu img{width: 50%;}
+
+header img{width: 150px;}
+header nav ul li{display: inline-block; padding:0 30px;}
+header nav ul li a{color:#ffffff;}
+a.bottone{background: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);border-radius: 40px; padding: 10px 30px; color:#fff;	transition: all ease 0.5s 0s;}
+a.bottone:hover{color:#fff !important; background: linear-gradient(to left, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);}
+/* ----- FINE HEADER -----*/
+
+
+/* ----- HERO ----- */
+section.hero h1{position: absolute; top:25%; left: 48%; font-size: 65px; font-weight: 700;
+background: -webkit-linear-gradient(#8e56fd, #eb7a98); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+section.hero p{position: absolute; top:38%; left: 48%; color:#fff; width: 50%; text-align: justify; font-size: 24px;}
+section.hero a.bottone{position: absolute; top:60%; left:70%;}
+/* ----- FINE HERO ----- */
+
+
+/* ----- MEDIA-TEXT ----- */
+/* Text */
+section.media-text{padding:100px;}
+section.media-text h2{font-size: 45px; background: url('../img/linea.png') left bottom / 300px no-repeat;}
+section.media-text h2 span{color:#8e56fd}
+section.media-text div.text p{margin-top: 50px; padding-left: 30px; text-align: justify; color: #616783}
+section.media-text div.text p.secondo_p{margin-top: 20px;}
+section.media-text div.text a.bottone{display: inline-block; margin: 30px 50px;}
+
+/* Immagine */
+section.media-text div.img img.img-fluid{padding:50px;}
+/* ----- FINE MEDIA-TEXT ----- */
+
+
+/* ----- I NOSTRI CORSI ----- */
+section.i_nostri_corsi{background-color: #eaeaf0; padding: 50px 0;}
+section.i_nostri_corsi h3{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat; text-align: center; margin-top: 50px;}
+section.i_nostri_corsi h3 span{color:#8e56fd}
+section.i_nostri_corsi p.par{text-align: center; color:#616783 !important; margin: 50px auto; font-weight: 500; position: static;}
+
+/* Card */
+div.card{border-radius: 5%;}
+div.card:hover{background: rgb(146,88,249);
+background: linear-gradient(0deg, rgba(146,88,249,1) 0%, rgba(194,83,219,1) 25%, rgba(220,88,192,1) 50%, rgba(231,103,170,1) 75%, rgba(232,121,155,1) 100%); color:#fff !important;}
+div.card img.card-img-top{width: 50px; height:60px; margin: 30px auto;}
+div.card div.card-body h4.card-title{text-align: center;}
+div.card div.card-body p.card-text{margin-top: 20px; font-weight: 300; text-align: center;}
+
+
+section.i_nostri_corsi div.col-lg-12.col-sm-12.col-xs-12 div.bottone-corsi a.bottone-cor{
+  background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b); width: 180px; text-align: center; display: block; margin: 0 auto; padding: 10px 0; border-radius: 25px; margin-top: 10px; color: #ffffff; text-decoration: none; cursor: pointer;
+  box-shadow: 0px 0px 10px #b465d2; transition: 0.5s all ease; font-size: 18px;}
+section.i_nostri_corsi div.col-lg-12.col-sm-12.col-xs-12 div.bottone-corsi a.bottone-cor:hover{color: #fff !important; background-image: linear-gradient(to left, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);}
+/* ----- FINE I NOSTRI CORSI ----- */
+
+
+/* ----- TRAINERS ----- */
+section.trainers{margin:50px auto}
+section.trainers h3{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat; text-align: center; margin: 50px;}
+section.trainers h3 span{color:#8e56fd}
+section.trainers p{text-align: center; color:#616783; margin: 50px auto; font-weight: 500;}
+section.trainers div.trainer-box{background-repeat: no-repeat; position: relative; width: 370px; height: 444px;}
+section.trainers div.trainer-box.tb1{background-image: url('../img/t1.png');}
+section.trainers div.trainer-box.tb2{background-image: url('../img/t2.png');}
+section.trainers div.trainer-box.tb3{background-image: url('../img/t3.png');}
+section.trainers div.trainer-name{position: absolute; top: 45%; right:-10%; display: block; opacity: 1; transform: rotateZ(270deg); background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b); padding: 10px; color:#fff; border-radius: 5px 5px 0 0;}
+section.trainers div.trainer-name.tn1{right:-21.43%;}
+
+/* Div informazioni hover */
+section.trainers div.row div.trainer-box div.informazioni{position: absolute; top:0%; left:0; width: 97.4%; text-align: center;
+background: rgb(146,88,249);
+background: linear-gradient(0deg, rgba(146,88,249,0.5) 0%, rgba(194,83,219,0.5) 25%, rgba(220,88,192,0.5) 50%, rgba(231,103,170,0.5) 75%, rgba(232,121,155,0.5) 100%);
+height: 100%; display:none;}
+section.trainers div.row div.trainer-box div.informazioni h5,
+section.trainers div.row div.trainer-box div.informazioni h6,
+section.trainers div.row div.trainer-box div.informazioni p{color:#fff !important; position: absolute;}
+section.trainers div.row div.trainer-box.tb1 div.informazioni h5{top:30%; left:calc(50% - 106px);}
+section.trainers div.row div.trainer-box.tb2 div.informazioni h5{top:30%; left:calc(50% - 63.312px);}
+section.trainers div.row div.trainer-box.tb3 div.informazioni h5{top:30%; left:calc(50% - 63.398px);}
+section.trainers div.row div.trainer-box div.informazioni h5{top:30%; left:calc(50% - 106px);}
+section.trainers div.row div.trainer-box div.informazioni h6{top:40%; left:calc(50% - 57.90px);}
+section.trainers div.row div.trainer-box div.informazioni p{margin: 0; top:50%; width: 75%; text-align: justify; left:calc(50% - 138.789px);}
+/* ----- FINE TRAINERS ----- */
+
+
+/* ----- CALENDARIO ----- */
+section.calendario{background-color: #eaeaf0; padding: 50px 0; margin: 50px 0;}
+section.calendario h3{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat; text-align: center; margin: 50px;}
+section.calendario h3 span{color:#8e56fd}
+section.calendario p{text-align: center; color:#616783; margin: 50px auto; font-weight: 500;}
+section.calendario div.container div.giorni ul {text-align: center; background-color: #cdcddf; border-radius: 20px;}
+section.calendario div.container div.giorni ul li{display: inline-block; padding:20px 30px; font-weight: bold; border-radius: 15px;}
+section.calendario div.container div.giorni ul li.attivo{color:#fff; background-color: #d84cc7;}
+section.calendario div.container div.row div.col-md-3{text-align: center;}
+section.calendario div.container div.row div.col-md-3 img{margin-top: 30px; height:60px;}
+section.calendario div.container div.row div.col-md-3 div{margin: 20px 0;}
+section.calendario div.container div.row div.col-md-3 div p{color:#fff; border-radius: 5px; background-color: #7e55d0; display: inline; padding:4px 20px;}
+section.calendario div.container div.row div.col-md-3 h4{color: #616685;}
+section.calendario div.container div.row div.col-md-3 h5{color:#616685; font-weight: 200;}
+
+/* Giorni */
+section.calendario div.row.martedi div.col-md-3,
+section.calendario div.row.mercoledi div.col-md-3,
+section.calendario div.row.giovedi div.col-md-3,
+section.calendario div.row.venerdi div.col-md-3,
+section.calendario div.row.sabato div.col-md-3{display: none;}
+/* ----- FINE CALENDARIO ----- */
+
+
+/* ----- FOOTER ------ */
+footer{background-image: url('../img/footer-bg.png'); background-size: cover;}
+
+/* CardBox */
+footer div.container div.card-box{position: absolute; display: block; width: 80%; background-color: #ffffff; text-align: center; border-radius: 6px; padding: 60px 0; left: 10%; box-shadow: 0 0 20px rgba(159, 93, 235, 0.4); margin-top: -200px; z-index: 3;}
+input[type=text]{width: 38%; display: block; margin: 0 auto; font-size: 15px; line-height: 1.5; color: #000; border-radius: 25px; border: none; box-shadow: 0 3px 15px rgba(159, 93, 235, 0.5); padding: 12px 0;padding-left: 15px;}
+div.pulsante{position: absolute; top: 54%; background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b); left: 67%; border-radius: 50%; padding: 11px}
+input[type=submit] {background: url('../img/paper-plane.png'); border: 0; width: 24px; height: 24px;}
+footer div.container div.card-box p{padding-top: 20px; font-size: 22px; color: #616783}
+footer div.container div.card-box h3{font-size: 45px;background-color: #000; background: url('../img/linea.png') center bottom / 300px no-repeat; text-align: center; margin: 50px;}
+footer div.container div.card-box h3 span{color:#8e56fd}
+
+/* Footer Link Utili */
+footer div.container div.row.clear{margin-top: 250px;}
+footer div.container div.row.clear div.footer-logo{margin: 210px auto 10px auto; text-align: center;}
+footer div.container div.row.clear div.footer-logo img{width: 200px;}
+footer div.container div.row.clear div.row h6{color:#fff; font-size: 24px; font-weight: bold;}
+footer div.container div.row.clear div.row ul{padding: 0;}
+footer div.container div.row.clear div.row div.col-md-12 ul li{display: inline-block; margin-top: 20px;}
+footer div.container div.row.clear div.row div.col-md-12 ul li a{padding:15px 50px; color:#fff}
+
+/* Footer Orari */
+footer div.container div.row.clear div.row h6{font-size: 22px;}
+footer div.container div.row.clear div.row div.col-8 table td{padding-right: 50px; color: #fff}
+
+
+/* Sotto Footer */
+hr{border-top: 1px solid #fff;}
+.footer-tag-2 ul {padding: 0; list-style-type: none; text-align: right; display: block; margin-bottom: 15px;}
+.footer-tag-2 ul li {display: inline-block; margin: 0 5px; font-size: 21px; background: transparent; width: 35px; height: 35px; text-align: center; border-radius: 50%; cursor: pointer; transition: 0.5s all ease;}
+.footer-tag-2 ul li:hover {background-color: #7038b9; box-shadow: 0 0 15px #9c7ae4; transition: 0.5s all ease;}
+.footer-tag-2 ul li a {color: #fff; font-size: 16px; text-decoration: none;}
+/* ----- FINE FOOTER ------ */
+
+
+
+
+/* --------------- ALTRE PAGINE ---------------- */
+
+/* ---------- PAGINA CHI SIAMO ----------- */
+/* ----- REGOLE GENERALI -----*/
+div.container-fluid.header.chisiamo{background-image: url('../img/about-bg-img.png');}
+/* ----- FINE REGOLE GENERALI -----*/
+
+
+/* ----- HERO ----- */
+section.hero.chisiamo h1{top:30%; left:calc(50% - 152.5px);}
+section.hero.chisiamo p{top:40%; left:calc(50% - 90px);}
+section.hero.chisiamo p a{color:#fff;}
+/* ----- FINE HERO ----- */
+
+
+/* ----- MEDIA-TEXT ----- */
+/* Text */
+section.media-text{padding:100px;}
+section.media-text h2{font-size: 45px; background: url('../img/linea.png') left bottom / 300px no-repeat;}
+section.media-text h2 span{color:#8e56fd}
+section.media-text div.text p{margin-top: 50px; padding-left: 30px; text-align: justify; color: #616783}
+section.media-text div.text p.secondo_p{margin-top: 20px;}
+section.media-text div.text a.bottone{display: inline-block; margin: 30px 50px;}
+
+/* Immagine */
+section.media-text div.img img.img-fluid{padding:50px;}
+/* ----- FINE MEDIA-TEXT ----- */
+
+
+/* ----- PERCHÈ SCEGLIERCI ----- */
+.hero-about-banner-section{position: relative; display: block; background-image: url(../img/about-bg-img.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 11% 0;}
+.hero-range-slider {background-image: linear-gradient(to right, rgba(146, 88, 249, 0.7), rgba(194, 83, 219, 0.7), rgba(220, 88, 192, 0.7), rgba(231, 103, 170, 0.7), rgba(232, 121, 155, 0.7)), url(../img/about-img-3.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding-top: 20px;}
+.row {padding: 0; outline: none;}
+.about-img {padding: 40px 40px 0 40px;}
+.range-title p {font-size: 14px; font-weight: 400; line-height: 1.5; text-align: left; color: #ffffff; margin-top: 40px;}
+.range-title {margin-top: 60px;}
+.range-title h2 {font-size: 36px; font-weight: 700; line-height: 1.45; text-align: left; letter-spacing: 1px; text-transform: uppercase; color: #ffffff; background: url(../img/inner-page/about-line-img.png) left bottom / 200px no-repeat;}
+
+/* skill */
+.container-skills {margin: 0; max-width: 100%;}
+.bar {position: relative; background-color: #d8d8d8; height: 10px; border-radius: 25px; margin: 0 0 20px 0;}
+.bar-fill {position: absolute; height: 10px; border-radius: 25px;}
+.bar-title {position: relative; font-size: 14px; font-weight: 600; text-align: left; margin: 0 0 5px 10px; line-height: 1.5; color: #ffffff;}
+.percent {position: absolute; right: 0; color: #ffffff;}
+
+/* Animations Below - Replace ease-out with infinite for infinite loop*/
+/*Edit here for html*/
+.bar-fill-html {width: 90%; background-color: #ffffff; animation: bar-fill-html 2s ease-out; -moz-animation: bar-fill-html 2s ease-out; -webkit-animation: bar-fill-html 2s ease-out;}
+@keyframes bar-fill-html {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+@-moz-keyframes bar-fill-html {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+@-webkit-keyframes bar-fill-html {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+/*Edit here for Javascript*/
+.bar-fill-javascript {width: 100%; background-color: #ffffff; animation: bar-fill-javascript 2s ease-out; -moz-animation: bar-fill-javascript 2s ease-out; -webkit-animation: bar-fill-javascript 2s ease-out;}
+@keyframes bar-fill-javascript {
+  0% {width: 0px;}
+  100% {width: 100%;}
+}
+
+@-moz-keyframes bar-fill-javascript {
+  0% {width: 0px;}
+  100% {width: 100%;}
+}
+
+@-webkit-keyframes bar-fill-javascript {
+  0% {width: 0px;}
+  100% {width: 100%;}
+}
+
+
+/*Edit here for Jquery*/
+.bar-fill-jquery {width: 84%; background-color: #ffffff; animation: bar-fill-jquery 2s ease-out; -moz-animation: bar-fill-jquery 2s ease-out; -webkit-animation: bar-fill-jquery 2s ease-out;}
+@keyframes bar-fill-jquery {
+  0% {width: 0px;}
+  100% {width: 70%;}
+}
+
+@-moz-keyframes bar-fill-jquery {
+  0% {width: 0px;}
+  100% {width: 70%;}
+}
+
+@-webkit-keyframes bar-fill-jquery {
+  0% {width: 0px;}
+  100% {width: 70%;}
+}
+
+/*Edit here for Responsive*/
+.bar-fill-responsive {width: 94%; background-color: #ffffff; animation: bar-fill-responsive 2s ease-out; -moz-animation: bar-fill-responsive 2s ease-out; -webkit-animation: bar-fill-responsive 2s ease-out;}
+@keyframes bar-fill-responsive {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+@-moz-keyframes bar-fill-responsive {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+@-webkit-keyframes bar-fill-responsive {
+  0% {width: 0px;}
+  100% {width: 90%;}
+}
+
+/*Edit here for Photoshop*/
+.bar-fill-photoshop {width: 20%; background-color: #ffffff; animation: bar-fill-photoshop 2s ease-out; -moz-animation: bar-fill-photoshop 2s ease-out; -webkit-animation: bar-fill-photoshop 2s ease-out;}
+@keyframes bar-fill-photoshop {
+  0% {width: 0px;}
+  100% {width: 20%;}
+}
+
+@-moz-keyframes bar-fill-photoshop {
+  0% {width: 0px;}
+  100% {width: 20%;}
+}
+
+@-webkit-keyframes bar-fill-photoshop {
+  0% {width: 0px;}
+  100% {width: 20%;}
+}
+/* end skill section */
+/* ----- FINE PERCHÈ SCEGLIERCI ----- */
+
+
+/* ----- RECENSIONI ----- */
+section.recensioni{padding:100px; text-align: center;}
+section.recensioni h3{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat;}
+section.recensioni h3 span{color:#8e56fd}
+section.recensioni p{margin: 50px auto; width: 70%;}
+section.recensioni div.row div.utente{border-radius: 20px; position:relative;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(143,2,143,0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(143,2,143,0.5);
+  box-shadow: 0px 0px 15px 0px rgba(143,2,143,0.5);}
+section.recensioni div.row div.utente img{position:absolute; top:15%; left: 8%;}
+section.recensioni div.row div.utente h4{position:absolute; top:10%; left: 40%;}
+section.recensioni div.row div.utente p{margin: 50px 10px 20px 50px;; text-align: right; float: right; font-size: 14px; font-weight: 400; line-height: 1.5; text-align: left; color: #616783;}
+/* ----- FINE RECENSIONI ----- */
+
+
+/* ----- VIDEO ----- */
+section.video{background-image: linear-gradient(to right, rgba(146, 88, 249, 0.7), rgba(194, 83, 219, 0.7), rgba(220, 88, 192, 0.7), rgba(231, 103, 170, 0.7), rgba(232, 121, 155, 0.7)), url(../img/video-bg-img.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 80px 0;}
+section.video div.video-section{display: block; position: relative; text-align: center; margin: 0 auto;}
+section.video div.container h4{font-size: 36px; font-weight: 600; line-height: 1.45; text-align: center; color: #ffffff; margin: 0;}
+section.video div.container div.video-img{position: relative; display: block; margin: 35px 0 25px 0;}
+div.video-img a img.img-fluid{position: relative; display: inline-block; overflow: hidden; z-index: 2;}
+.video-circle {position: absolute; display: block; bottom: 0%; top: -4.9%; left: 45.60%; width: 100px; height: 100px; border-radius: 50%; background: #c89bcb; z-index: 1;}
+section.video div.container p{font-size: 20px; font-weight: 500; line-height: 1.5; text-align: center; color: #ffffff; margin: 0;}
+/* ----- FINE VIDEO ----- */
+/* ---------- FINE PAGINA CHI SIAMO ----------- */
+
+
+/* ---------- PAGINA CORSI ----------- */
+div.container-fluid.header.corsi{background-image: url('../img/course-bg-img.png');}
+/* ----- HERO ----- */
+section.hero.corsi-pag h1{top:30%; left:calc(50% - 78px);}
+section.hero.corsi-pag p{top:40%; left:calc(50% - 70px);}
+section.hero.corsi-pag p a{color:#fff;}
+/* ----- FINE HERO ----- */
+/* ---------- FINE PAGINA CORSI ----------- */
+
+
+/* ---------- PAGINA CALENDARIO ----------- */
+div.container-fluid.header.calendario{background-image: url('../img/schedule-bg-img.png');}
+/* ----- HERO ----- */
+section.hero.calendario-pag h1{top:30%; left:calc(50% - 164px);}
+section.hero.calendario-pag p{top:40%; left:calc(50% - 103.5px);}
+section.hero.calendario-pag p a{color:#fff;}
+/* ---------- FINE PAGINA CALENDARIO ----------- */
+
+
+/* ---------- PAGINA DOVE SIAMO ----------- */
+div.container-fluid.header.dovesiamo{background-image: url('../img/blog-bg-img.png');}
+/* ----- HERO ----- */
+section.hero.dovesiamo-pag h1{top:30%; left:calc(50% - 164px);}
+section.hero.dovesiamo-pag p{top:40%; left:calc(50% - 103.5px);}
+section.hero.dovesiamo-pag p a{color:#fff;}
+
+/* ----- MAIN ----- */
+main.dovesiamo{text-align: center; margin-top: 50px;}
+main.dovesiamo h2{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat;}
+main.dovesiamo h2 span, main.dovesiamo h3 strong, main.dovesiamo h4 strong{color:#8e56fd;}
+/* ----- MAP ----- */
+iframe{width: 100vw; height: 50vh;}
+/* ---------- FINE PAGINA DOVE SIAMO ----------- */
+
+
+/* ---------- PAGINA TRAINERS ----------- */
+div.container-fluid.header.trainers{background-image: url('../img/team-bg-img.png');}
+/* ----- HERO ----- */
+section.hero.trainers-pag h1{top:30%; left:calc(50% - 120px);}
+section.hero.trainers-pag p{top:40%; left:calc(50% - 87.5px);}
+section.hero.trainers-pag p a{color:#fff;}
+/* ---------- FINE PAGINA TRAINERS ----------- */
+
+
+/* ---------- PAGINA CONTATTACI ----------- */
+div.container-fluid.header.contattaci{background-image: url('../img/error-img.jpg');}
+
+/* ----- HERO ----- */
+section.hero.contattaci-pag h1{top:30%; left:calc(50% - 157.5px);}
+section.hero.contattaci-pag p{top:40%; left:calc(50% - 101px);}
+section.hero.contattaci-pag p a{color:#fff;}
+
+/* ----- MAIN ----- */
+main.contattaci h2{font-size: 45px; background: url('../img/linea.png') center bottom / 300px no-repeat;}
+main.contattaci h2 span{color:#8e56fd;}
+main.contattaci p{margin-top: 20px;}
+
+/* ----- CONTATTI ----- */
+main.contattaci section.contatti div.contact-box{position: relative; display: block; overflow: hidden; padding: 60px 0 0 0;}
+main.contattaci section.contatti div.contact-box div.contact-box-icons{position: absolute; display: block; top: 0px; left: 30%; width: 30%; background: #fff; padding: 10% 0; text-align: center; border-radius: 50%; border-top: 1px solid #9258f9; border-right: 1px solid #c253db; border-bottom: 1px solid #dc58c0; border-left: 1px solid #e767aa; cursor: pointer; z-index: 2; margin: 20px; outline: none; box-shadow: 0 0 15px rgba(159, 93, 235, 0.4);}
+main.contattaci section.contatti div.contact-box div.contact-card{position: relative; display: block; box-shadow: 0 1px 8px rgba(159, 93, 235, 0.4); padding: 90px 30px 60px 30px; border-radius: 6px; margin: 10px 6px; cursor: pointer;}
+main.contattaci section.contatti div.contact-box div.contact-card h3{font-size: 18px; font-weight: 500; text-align: center; color: rgba(50, 43, 64, .9); margin: 0; line-height: 1.45;}
+
+/* ----- FORM ----- */
+section.form{margin-top: 50px;}
+section.form form input.form-input{padding: 10px 0; display: inline-block; width: 35%; margin: 0 6px; padding-left: 25px; font-size: 14px; font-weight: 400; color: #000; transition: 0.5s all ease;}
+section.form form .form-msg{padding: 10px 0; display: block; margin: 20px auto; width: 71%; padding-left: 25px; font-size: 14px; font-weight: 400; color: #000; min-height: 100px; border-radius: 12px; border: 1px solid #cbcbcb; transition: 0.5s all ease;}
+section.form form input.form-btn{background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b); width: 180px; text-align: center; display: inline-block; margin: 0 auto; padding: 5px 0 30px 0; border-radius: 25px; border: none; color: #ffffff; margin-left: 10px; margin: 20px 0; box-shadow: 0px 0px 10px #b465d2;}
+/* ---------- FINE PAGINA CONTATTACI ----------- */
+/* --------------- FINE ALTRE PAGINE ---------------- */
