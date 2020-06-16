@@ -1,0 +1,135 @@
+/* ----- REGOLE GENERALI ----- */
+/* ----- FINE REGOLE GENERALI ----- */
+
+
+/* ----- RISCRITTURA BOOTSTRAP ----- */
+div.container-fluid{padding: 0; background-color: #fcfcfc;}
+div.container{margin-top: 100px; overflow-x: hidden;}
+/* ----- FINE RISCRITTURA BOOTSTRAP ----- */
+
+
+/* ----- MODULI ----- */
+div.background{background-image:url('../img/banner.jpg'); background-repeat: no-repeat; background-size: 100vw; height: 70vh; overflow-x: hidden;}
+/* ----- FINE MODULI ----- */
+
+
+/* ----- HEADER ----- */
+/* Logo */
+header img.logo{width: 200px; margin-top: 25px; margin-left: 25px;}
+
+/* Navbar */
+header nav ul{text-align: center; padding:50px;}
+header nav ul li{display: inline-block; padding-right: 50px;}
+header nav ul li ul.sottomenu{display: none;}
+
+/* Newsletter */
+header div.col-md-1 img{margin-top: 40px;}
+/* ----- FINE HEADER ----- */
+
+
+/* ----- HERO ----- */
+/* Social */
+div.hero.row div.col-md-2 div.social{width: 50px; height: 50px; border-radius: 50%; background: #fff; position: relative; margin: 50px;}
+div.hero.row div.col-md-2 div.social img{width: 30px; position: absolute; top:calc(50% - 15px); left:calc(50% - 15px);}
+
+/* Headings */
+div.container.carte{overflow: hidden;}
+div.hero.row div.col-md-8{position: relative;}
+div.hero.row div.col-md-8 h1{font-size: 64px; color:#fff; position: absolute; top:30%;}
+div.hero.row div.col-md-8 h2{font-size: 24px; color:#fff; position: absolute; top:50%; text-align: justify;  width: 80%;}
+div.hero.row div.col-md-8 div.pulsanti{position: absolute; top:80%;}
+
+/* Play */
+div.hero.row div.col-md-2 div.social.play{width: 80px; height:80px; margin-top: 150px;}
+/* ----- FINE HERO ----- */
+
+
+/* ----- Media-Text ----- */
+div.media-text{margin-top: 100px;}
+div.media-text h4{font-size: 50px; margin-bottom: 25px;}
+div.media-text img{width: 100%;}
+div.media-text div.col-md-8 h4{font-size: 48px;}
+div.media-text div.col-md-8 span{margin-left: 50px;}
+div.media-text div.col-md-8 span::before{content: ' '; position: absolute; background: #333; height: 5px;width: 40px;top: 10px; left: 5px; margin-left: 10px;}
+div.media-text p{font-size: 20px; text-align: justify;}
+/* ----- Fine Media-Text ----- */
+
+
+/* ----- Carte ----- */
+div.card-deck{margin-top: 100px;}
+div.card-deck div.card img{width: 100px; height:100px; margin: 50px auto;}
+div.card-deck div.card h5{text-align: center; font-size: 23px; margin-bottom: 50px;}
+div.card-deck div.card div.card-body button.btn.btn-dark.btn-lg{color:#fff; display: block; margin: 0 auto; padding:10px 60px; margin-bottom: 50px;}
+/* ----- Fine Carte ----- */
+
+
+/* ----- Road Map ----- */
+div.road-map{background-image: url('../img/roadmap.png'); background-size: 99vw; height: 100vh; background-repeat: no-repeat; position: relative; margin-top: 200px;}
+div.blocchetto{position: absolute; width: 300px; height: 300px;}
+div.blocchetto h5{font-size: 32px;}
+div.blocchetto p{text-align: justify; color:#666;}
+div.blocchetto div.bloc-img{width: 70px; height: 70px; position: absolute; border:1px solid #f7f7f7; -webkit-box-shadow: 0px 0px 9px 0px rgba(200,200,200,1); }
+div.blocchetto img{width: 100%; height: 100%;}
+
+/*Posizionamento blocchetti */
+div.road-map div.blocchetto.uno{top:47%; left: 18%;}
+div.road-map div.blocchetto.due{top:35%; left: 54%;}
+div.road-map div.blocchetto.due div.bloc-img{top:-25%; left:0%;}
+div.road-map div.blocchetto.tre{top:5%; left: 72%;}
+div.road-map div.blocchetto.tre div.bloc-img{top:-25%; left:20%;}
+div.road-map div.blocchetto.quattro{top:50%; left: 83%;}
+div.road-map div.blocchetto.quattro div.bloc-img{top:-20%; left:80%;}
+/* ----- Fine Road Map ----- */
+
+
+/* ----- Caso ----- */
+div.caso{overflow: hidden; background-color: #efefef; background-image: url('../img/cane.jpeg'); background-position: top right; background-repeat: no-repeat; padding-top: 100px; padding-bottom: 100px;}
+div.caso div.container{width: 30%; margin-left: 15%; margin-top: 0;}
+div.caso div.container h2{font-size: 48px; margin-bottom: 50px;}
+div.caso div.container p{font-size: 24px; margin-bottom: 50px;}
+div.caso div.container a{font-size: 20px;}
+div.caso div.container a::after{content: '➝';}
+/* ----- Fine Caso ----- */
+
+
+/* ----- Feedback ----- */
+div.container.feedback div.row div.col-md-4 img{width: 100%;}
+div.container.feedback div.row div.col-md-8 span{margin-left: 50px; font-size: 20px;}
+div.container.feedback div.row div.col-md-8 span::before{content: ' '; position: absolute; background: #333; height: 5px;width: 40px;top: 14px; left: 5px; margin-left: 10px;}
+div.container.feedback div.row div.col-md-8 h3{font-size: 48px; margin-bottom: 20px;}
+div.container.feedback div.row div.col-md-8 div.orario-evento{display: inline-block; margin:20px 50px 20px 0;}
+div.container.feedback div.row div.col-md-8 div.luogo-evento{display: inline-block;}
+div.container.feedback div.row div.col-md-8 div.orario-evento span{margin-left: 10px;}
+div.container.feedback div.row div.col-md-8 div.luogo-evento span{margin-left: 10px;}
+div.container.feedback div.row div.col-md-8 img{width: 50px;}
+div.container.feedback div.row div.col-md-8 p{font-size: 24px;}
+div.container.feedback div.row div.col-md-8 p.nome-tizio{color:#043381; font-size: 26px; font-weight: bold;}
+div.container.feedback div.row div.col-md-8 p.qualifica{color:#666; font-size: 18px; font-weight: lighter; margin-top: -20px;}
+/* ----- Fine Feedback ----- */
+
+
+/* ----- Footer ----- */
+/* Prima Colonna */
+footer{background: #043381; color:#fff; margin-top: 0;}
+footer div.container div.row div.col-md-4.widget{background: #fff; color:#000; box-shadow: 0px 0px 30px 0px rgba(74,74,74,1); margin-bottom: 30px; z-index: 5; padding: 30px 30px 30px 30px !important}
+footer div.container div.row div.col-md-4.widget img.logo{width: 100%; margin-bottom: 20px;}
+footer div.container div.row div.col-md-4.widget ul{list-style-type: none; padding: 0;}
+footer div.container div.row div.col-md-4.widget ul li{margin-bottom: 20px; color:#666;}
+footer div.container div.row div.col-md-4.widget ul li img{width: 30px;}
+footer div.container div.row div.col-md-4.widget ul li a{color:#666;}
+footer div.container div.row div.col-md-4.widget p{font-size: 18px; text-align: justify; margin-bottom: 40px;}
+
+/* Seconda Colonna */
+footer div.container div.row div.col-md-4.sec-col{padding: 60px;}
+footer div.container div.row div.col-md-4 h6{font-size: 28px;}
+footer div.container div.row div.col-md-4 ul{margin-top: 30px; padding: 0;}
+footer div.container div.row div.col-md-4 ul li{list-style-type: none; padding: 0;}
+footer div.container div.row div.col-md-4 ul li a{display: block; padding-top: 15px; padding-bottom: 15px; color:#fff;}
+
+/* Terza Colonna */
+footer div.container div.row div.col-md-4.ter-col{margin-left: -20px; padding: 60px 0px 60px 0px;}
+footer div.container div.row div.col-md-4.ter-col p{font-size: 20px; width: 120%; margin-bottom: 20px;}
+footer div.container div.row div.col-md-4 input{font-size: 20px; padding: 5px; width: 100%;}
+footer div.container div.row div.col-md-4 span button img{width: 10%; margin-top: -90px; margin-left: 320px;}
+
+/* ----- Fine Footer ----- */
