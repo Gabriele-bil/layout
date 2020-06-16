@@ -1,0 +1,89 @@
+/* ----- REGOLE GENERALI -----*/
+a.bottone{
+  background: #00a651;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: #fff;
+  transition: all ease 0.5s 0s;
+}
+/* ----- FINE REGOLE GENERALI -----*/
+
+
+/* ----- RISCRITTURA BOOTSTRAP -----*/
+div.container-fluid{padding: 0;}
+
+.row{margin: 0;}
+/* ----- FINE RISCRITTURA BOOTSTRAP -----*/
+
+
+/* ----- HEADER -----*/
+header{background-color: #fff;}
+
+/* LOGO */
+header div.img-logo img{margin-top: 10px;}
+
+/* NAVBAR */
+header nav ul{
+  margin-top: 30px; margin-right: 150px;
+  text-align: right;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav ul li a{
+  padding: 20px 50px;
+  color: #000;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+header nav ul li a.attivo{
+  color: #00a651;
+  font-weight: bold;
+}
+
+header nav ul li a:hover{
+  color: #00a651;
+  text-decoration: none;
+}
+
+/* ----- FINE HEADER -----*/
+
+
+/* ----- HERO -----*/
+div.hero{
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  text-align: center;
+  width: 100%;
+}
+
+div.hero h1{
+  position: absolute;
+  top:50%; left: 0px;
+  width: 100%;
+  color:#fff;
+  font-size: 64px;
+}
+
+div.hero h2{
+  position: absolute;
+  top:60%; left: 0px;
+  width: 100%;
+  color:#fff;
+  font-size: 34px;
+}
+
+div.hero a.bottone{
+  position: absolute;
+  top:70%; left: 45%;
+  padding: 10px 40px;
+  font-size: 24px;
+}
+
+/* ----- FINE HERO -----*/
