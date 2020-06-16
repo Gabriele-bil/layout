@@ -1,0 +1,69 @@
+/* ----- Riscrittura Bootstrap -----  */
+.container-fluid{padding: 0;}
+/* ----- Fine Riscrittura Bootstrap -----  */
+
+/* ----- Regole Generali ----- */
+aside.sx, main.centro div.col-md-2, main.centro div.col-md-6{border-right:1px solid #bdbdbd;}
+
+/* ----- Fine Regole Generali ----- */
+
+
+/* ----- Blocchi ----- */
+aside.sx, main.centro, aside.dx, header{}
+
+aside.sx, main.centro, aside.dx{float: left;}
+header{position: fixed; width: 100vw; height: 16vh; z-index:4;}
+aside.sx, aside.dx{height: 100vh;}
+main.centro{height: 100vh; position: relative;}
+aside.sx{width: 10%;}
+main.centro{width:85%;}
+aside.dx{width: 5%;}
+/* ----- Fine Blocchi ----- */
+
+
+/* ----- Header ----- */
+header nav ol{text-align: right; position:absolute; top:40px; right: 150px; list-style-type: decimal;}
+header nav ol li{display: inline-block; padding:0 50px;}
+header img{padding-left: 15px;}
+header ol span.numero_link{color: #bdbdbd; font-size: 18px; padding-right: 10px;}
+header ol li a{color:#000; font-size: 18px; text-transform: uppercase;}
+/* ----- Fine Header ----- */
+
+
+/* ----- Lato SX ----- */
+aside.sx div.verticale{position: absolute; left: -140px; bottom:200px; transform: rotate(-90deg); padding: 0;}
+aside.sx div.verticale li{display: inline-block; text-align: center;}
+aside.sx div.verticale li a{padding-right:30px; color:#000; font-weight: bold;}
+aside.sx div.verticale ul li a.instagram:hover{color: #E1306C;}
+aside.sx div.verticale ul li a.facebook:hover{color: #2f55a4;}
+aside.sx div.verticale ul li a.youtube:hover{color: #C4302B;}
+aside.sx div.verticale ul li a.twitter:hover{color: #00ACEE;}
+/* ----- Fine Lato SX ----- */
+
+
+/* ----- Main Centro ----- */
+
+/* Primo blocco */
+main.centro div.col-md-2 div.numero_post{position: absolute; top:40vh; left:10vh;}
+main.centro div.col-md-2 div.numero_post span.numero_attivo{font-size: 100px;}
+main.centro div.col-md-2 div.numero_post span.numero_slash{font-size: 25px; color:#bdbdbd;}
+
+/* Secondo blocco */
+
+main.centro div.col-md-2 h1{display: block; position: absolute; top:40vh; width: 700px; overflow:hidden; z-index: 4; font-size: 65px;}
+main.centro div.col-md-2 h2{position: relative; top:52vh; font-size: 25px; width: 600px; z-index: 4; margin-left: 50px;}
+main.centro div.col-md-2 h2:before{content: ' '; position: absolute; background: #333; height: 60px; width: 7px; left:-25px;}
+
+/* Terzo blocco */
+main.centro div.col-md-6{padding: 0; background-image: url('../img/img_art_1.jpg'); background-size:cover; background-repeat: no-repeat;}
+#bg1{padding: 0; background-image: url('../img/img_art_1.jpg'); background-size:cover; background-repeat: no-repeat;}
+#bg2{padding: 0; background-image: url('../img/img_art_2.jpg'); background-size:cover; background-repeat: no-repeat;}
+#bg3{padding: 0; background-image: url('../img/img_art_3.jpg'); background-size:cover; background-repeat: no-repeat;}
+#bg4{padding: 0; background-image: url('../img/img_art_4.jpg'); background-size:cover; background-repeat: no-repeat;}
+#bg5{padding: 0; background-image: url('../img/img_art_5.jpg'); background-size:cover; background-repeat: no-repeat;}
+/* ----- Fine Main Centro ----- */
+
+
+/* ----- Lato DX ----- */
+aside.dx footer.verticale{position: absolute; right: -90px; bottom:142px; transform: rotate(-90deg); padding: 0;}
+/* ----- Fine Lato DX ----- */
