@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tema 2 Mediz - Dentist</title>
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/stile.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Top Bar -->
+      <div class="top-bar">
+
+        <!-- SX -->
+        <div class="top-bar-sx">
+          <img class="mr-1" src="icons/clock.svg" alt="orari" width="32" height="32" title="Orari"/>
+          <span class="mr-5">Lun - Dom 09:00 - 21: 00</span>
+
+          <img class="mr-1" src="icons/phone.svg" alt="numero di telefono" width="32" height="32" title="numero di telefono"/>
+          <span class="mr-5">+39 333 3333 333</span>
+
+          <img class="mr-1" src="icons/envelope.svg" alt="mail" width="32" height="32" title="mail"/>
+          <a href="mailto:blabla@gmail.com?"><span class="mr-5">blabla@gmail.com</span></a>
+        </div>
+
+        <!-- DX -->
+        <div class="top-bar-dx">
+          <a href="#"><img class="mr-2" src="icons/facebook.svg" alt="facebook" width="24" height="24" title="facebook"/></a>
+          <a href="#"><img class="mr-2" src="icons/instagram.svg" alt="instagram" width="24" height="24" title="instagram"/></a>
+          <a href="#"><img class="mr-2" src="icons/youtube.svg" alt="youtube" width="24" height="24" title="youtube"/></a>
+          <a href="#"><img class="mr-2" src="icons/twitter.svg" alt="twitter" width="24" height="24" title="twitter"/></a>
+          <a href="#"><img src="icons/linkedin.svg" alt="linkedin" width="24" height="24" title="linkedin"/></a>
+        </div>
+
+      </div>
+      <!-- Fine Top Bar -->
+
+
+      <!-- Header -->
+      <header class="p-4">
+        <a href="index.html"><img src="img/logo.png" alt="logo-tema" title="vai alla Homepage"/></a>
+        <nav class="mt-4 mr-5">
+          <ul>
+            <li><a href="#" class="attivo">Home</a></li>
+            <li><a href="#">Chi siamo</a></li>
+            <li><a href="#">I nostri servizi</a></li>
+            <li><a href="#">Contattaci</a></li>
+            <li><a href="#">Galleria</a></li>
+          </ul>
+          <button onclick="location.href='contattaci.html'" type="button" class="btn btn-primary">Contattaci Adesso</button>
+        </nav>
+      </header>
+      <!-- Fine Header -->
+
+
+      <main>
+      <!-- Hero-->
+      <div class="hero">
+        <img src="img/hero.jpg" alt="hero"/>
+        <h1>Titolo Tema 2</h1>
+        <h2>Lorem Ipsum Tema 2</h2>
+        <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
+      </div>
+      <!-- Fine Hero -->
+
+
+      <!-- Media-text -->
+      <div class="media-text">
+        <div class="testo">
+          <h3>Il nostro studio</h3>
+          <p class="important">E come siamo arrivati qui</p>
+          <p> È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
+          <img src="img/firma.png" alt="firma" title="firma"/>
+        </div>
+
+        <img class="media" src="img/titolare.jpg" alt="titolare" title="titolare">
+      </div>
+      <!-- Fine Media-text -->
+
+
+      <!-- Form -->
+      <div class="container-fluid grigio">
+        <div class="container">
+          <div class="appuntamento">
+            <h4>Prendi un appuntamento</h4>
+            <p>Completa il seguente modulo e ti risponderemo al più presto</p>
+            <p class="important">Oppure chiamaci al 333 3333 333</p>
+            <h5>Orari di Apertura</h5>
+            <table>
+              <tr>
+                <td><img class="mr-1 clock" src="icons/clock.svg" alt="orari" width="16" height="16" title="Orari"/>Lunedì-Venerdì</td>
+                <td><strong>08:00 - 13:00 / 15:00 - 19:00</strong></td>
+              </tr>
+              <tr>
+                <td><img class="mr-1 clock" src="icons/clock.svg" alt="orari" width="16" height="16" title="Orari"/>Sabato</td>
+                <td><strong>08:00 - 13:00</strong></td>
+              </tr>
+            </table>
+
+          </div>
+
+          <div class="form">
+            <form action="form.php" method="post">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                    <input type="text" class="form-control" id="nome" placeholder="Nome e cognome">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="giorno" placeholder="Giorno">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="orario" placeholder="Orario">
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <textarea id="messaggio" placeholder="Scrivi qui il tuo messaggio"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Invia Il messaggio</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Fine Form -->
+
+
+      <!-- Certificazioni -->
+      <div class="certificazioni">
+        <h6>Certificazioni</h6>
+        <hr class="divisorio"/>
+
+        <div class="container row mx-auto">
+          <div class="col-md-3">
+            <img src="img/certificazione1.png" alt="certificazione1"/>
+          </div>
+
+          <div class="col-md-3">
+            <img src="img/certificazione2.png" alt="certificazione2"/>
+          </div>
+
+          <div class="col-md-3">
+            <img src="img/certificazione3.png" alt="certificazione3"/>
+          </div>
+
+          <div class="col-md-3">
+            <img src="img/certificazione4.png" alt="certificazione4"/>
+          </div>
+        </div>
+      </div>
+      <!-- Fine Certificazioni -->
+
+
+      <!-- Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.2162170520082!2d13.346659015600132!3d38.13516509911497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1319ef510c9b3ee9%3A0xd08822e068a60b9a!2sVia%20della%20Libert%C3%A0%2C%20Palermo%20PA!5e0!3m2!1sit!2sit!4v1577210923317!5m2!1sit!2sit"></iframe>
+      <!-- Fine Map -->
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-sx">
+            <img class="logo" src="img/logo.png" alt="logo tema 2"/>
+            <p>
+              Palermo, 90100<br />
+              Via della Libertà, 100<br />
+            </p>
+            <div class="contatti-footer">
+              <img class="mr-1" src="icons/phone.svg" alt="numero di telefono" width="32" height="32" title="numero di telefono"/>
+              <span class="mr-5">+39 333 3333 333</span><br />
+              <img class="mr-1" src="icons/envelope.svg" alt="mail" width="32" height="32" title="mail"/>
+              <a href="mailto:blabla@gmail.com?"><span class="mr-5">blabla@gmail.com</span></a>
+            </div>
+          </div>
+
+          <div class="footer-dx">
+            <h6>Orari</h6>
+            <table>
+              <tr>
+                <td><img class="mr-1 clock" src="icons/clock.svg" alt="orari" width="16" height="16" title="Orari"/>Lunedì-Venerdì</td>
+                <td><strong>08:00 - 13:00 / 15:00 - 19:00</strong></td>
+              </tr>
+              <tr>
+                <td><img class="mr-1 clock" src="icons/clock.svg" alt="orari" width="16" height="16" title="Orari"/>Sabato</td>
+                <td><strong>08:00 - 13:00</strong></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </footer>
+      <!-- Fine Footer -->
+
+
+      <!-- Bottom-Bar -->
+      <div class="bottom-bar">
+        <p>COPYRIGHT © 2019 GABRIELI, TUTTI I DIRITTI RISERVATI</p>
+      </div>
+      <!-- Fine Bottom-Bar -->
+    </div>
+
+
+    <!-- Toggle Menu -->
+    <div class="toggle-menu">
+      <img src="img/menu.png" alt="menu">
+    </div>
+    <!-- Fine Toggle Menu -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
