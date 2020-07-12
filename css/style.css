@@ -1,126 +1,533 @@
 /* ----- Regole Generali ------*/
+body {
+  background-color: #dedede;
+}
 
-.container-fluid, .row {
-    margin: 0;
-    padding: 0;
+.container-fluid,
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-4 {
+  padding: 0;
+}
+
+h1 {
+  font-size: 78px;
+}
+
+h3,
+h2 {
+  font-size: 48px;
+}
+
+h5,
+h6 {
+  margin: 0;
+}
+
+main section {
+  margin-top: 100px;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style-type: none;
 }
 
 .img-responsive {
-    width: 100px;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+
+i {
+  color: #000;
+}
+
+i.fab.fa-facebook {
+  color: #4574d6;
+}
+
+i.fab.fa-instagram {
+  color: #c13584;
+}
+
+i.fab.fa-whatsapp {
+  color: #075e54;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  transition: 0.3s ease-in-out;
+}
+
+/* ---------- Hero -----------*/
+div.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ---------- Fine Hero -----------*/
 
 /* ----- Fine Regole Generali ------*/
+/* ------------------------------ INDEX ------------------------------ */
 
-
-/* ---------- INDEX ---------- */
-
+/* ---------- Header ----------- */
 
 /* ----- PreNav ------*/
-
-div.preNav {
-    background-color: #dbdada;
-    padding: 5px;
-    color: #675444;
-    font-weight: 700;
+.pre-nav {
+  background-color: #86bbd8;
+  height: 50px;
 }
 
-div.preNav .col-md-8 a {
-    color: #14ac14;
+.pre-nav .left,
+.pre-nav .right {
+  display: inline;
 }
 
-div.preNav .col-md-4 a {
-    color: #000;
+.pre-nav .left {
+  float: left;
 }
 
-div.preNav ul li {
-    display: inline-block;
+.pre-nav .right {
+  float: right;
+  padding-right: 25px;
+  padding-top: 8px;
 }
 
-div.preNav-left {
-    vertical-align: middle;
+.pre-nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 10px;
 }
 
-div.preNav-left ul li {
-    padding: 10px 20px;
+.pre-nav .left ul li {
+  padding: 0 25px;
 }
 
-div.preNav-left ul li i {
-    padding-right: 10px;
+.pre-nav ul li i {
+  padding-right: 10px;
 }
-
-div.preNav-right {
-    text-align: right;
-    padding-right: 50px;
-}
-
-div.preNav-right li {
-    font-size: 30px;
-    padding: 0 5px;
-}
-
-.fab.fa-facebook:hover {
-    color: #3b5998;
-}
-
-.fab.fa-instagram:hover {
-    color: #e1306c;
-}
-
 
 /* ----- Fine PreNav ------*/
 
-
-/* ----- Header ------*/
-header {
-    background-color: #F9BE4F;
-    height: 60px;
+/* ----- Navbar ------*/
+nav.container {
+  height: 100px;
 }
 
-header div.col-md-6 img {
-    margin-left: 10px;
+nav.container img.logo {
+  width: 222px;
+  height: 52.66px;
+  margin-top: 23.7px;
 }
 
-.index h1 {
-    font-size: 36px;
-    display: inline-block;
-    padding-left: 5px;
-    margin-top: 10px;
-    vertical-align: middle;
+nav.container ul {
+  float: right;
 }
 
-nav ul.navigation-bar {
-    float: right;
+nav.container ul li {
+  display: inline-block;
+  line-height: 100px;
+  padding: 0 20px;
+  font-size: 22px;
 }
 
-nav ul.navigation-bar li {
-    display: inline-block;
-    padding: 18px 5px 0 5px;
+nav.container ul li a {
+  color: #222222;
 }
 
-nav ul.navigation-bar li a {
-    color: #fff;
-    padding: 19.5px;
+nav.container ul li a.attivo {
+  color: #3626a7;
+  font-weight: 700;
 }
 
-nav ul.navigation-bar li a.active, nav ul.navigation-bar li a:hover {
-    background-color: #e1306c;
-    border-radius: 355px 45px 225px 75px/15px 225px 15px 255px;
-    text-decoration: none;
+nav.container ul li a:hover {
+  color: #3626a7;
+  text-decoration: none;
 }
 
+span.circle-decoration {
+  background-color: #3626a7;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin: -30px auto 0 auto;
+}
 
-/* ----- Fine Header ------*/
+/* ----- Fine Navbar ------*/
 
+/* ---------- Fine Header -----------*/
+
+/* ---------- Main -----------*/
 /* ----- Hero ------*/
-div.hero img {
-    width: 100%;
+div.carousel h1 {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+  color: #fff;
 }
+
+div.carousel h2 {
+  position: absolute;
+  top: 53%;
+  right: 10%;
+  font-size: 56px;
+  text-align: right;
+  color: #fff;
+}
+
 /* ----- Fine Hero ------*/
 
+/* ----- Intro-Home ------*/
+section.intro-home div.col-md-9 p {
+  text-align: justify;
+  line-height: 30px;
+  text-align: justify;
+}
 
-/* ---------- FINE INDEX ---------- */
+section.intro-home div.col-md-3 {
+  align-self: center;
+  justify-content: center;
+}
+
+a.contact {
+  background-color: #3626a7;
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left: 35px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+a.contact:hover {
+  background-color: #86bbd8;
+  transition: 0.3s ease-in-out;
+}
+
+/* ----- Fine Intro-Home ------*/
+
+/* ----- Call-Widget ------*/
+.call-widget div.call-box {
+  position: relative;
+}
+
+.call-widget div.call-box a {
+  color: #fff;
+}
+
+.call-widget div.call-box div.box-text {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center;
+}
+
+.call-widget div.col-md-4 div.box-text p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.call-widget div.col-md-4 div.box-text h3 {
+  font-size: 32px;
+}
+
+.call-widget div.col-md-4 div.box-text p.info::before,
+.call-widget div.col-md-4 div.box-text p.info::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  width: 32px;
+  height: 2px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.call-widget div.col-md-4 div.box-text p.hover-text {
+  display: none;
+  margin-top: 20%;
+  font-size: 28px;
+}
+
+/* ----- Fine Call-Widget ------*/
+
+/* ----- Media-text Razza ----- */
+.media-text.razza .row .text {
+  align-self: center;
+  justify-content: center;
+}
+
+.media-text.razza .text p {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* ----- Fine Media-text Razza ----- */
+
+/* ----- Parallasse ----- */
+section.parallax {
+  margin-top: 100px;
+  height: 500px;
+  background-image: url("../img/img5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6);
+}
+
+section.parallax div.container {
+  text-align: center;
+  padding-top: 170px;
+  color: #fff;
+}
+
+section.parallax div.container p {
+  font-size: 20px;
+}
+
+/* ----- Fine Parallasse ----- */
+
+/* ---------- Fine Main -----------*/
+
+/* ---------- Footer -----------*/
+footer {
+  margin-top: 100px;
+  background-color: #86bbd8;
+}
+
+footer .row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ----- Presentazione ----- */
+footer .social {
+  text-align: center;
+}
+
+footer .social ul li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+footer .social ul li a i {
+  color: #000;
+}
+
+/* ----- Fine Presentazione ----- */
+
+/* ----- Link Utili ----- */
+footer .link-utili {
+  text-align: center;
+}
+
+footer .link-utili h4 {
+  font-size: 32px;
+}
+
+footer .link-utili ul li a {
+  color: #000;
+  font-size: 24px;
+}
+
+footer .link-utili ul li a:hover {
+  text-decoration: none;
+  color: #3626a7;
+}
+
+/* ----- Fine Link Utili ----- */
+
+/* ----- Contatti ----- */
+footer .contatti {
+  text-align: right;
+}
+
+footer .contatti h4 {
+  font-size: 32px;
+}
+
+footer .contatti h5,
+footer .contatti ul li {
+  font-size: 20px;
+}
+
+footer .contatti ul li {
+  padding: 10px 0 10px 25px;
+}
+
+footer .contatti ul li a {
+  color: #000;
+}
+
+footer .contatti ul li i {
+  padding-right: 10px;
+}
+
+/* ----- Fine Contatti ----- */
+/* ---------- Fine Footer -----------*/
+/* ------------------------------ FINE INDEX ------------------------------ */
+
+/* ------------------------------ ALLEVAMENTO ------------------------------ */
+/* ---------- Hero ---------- */
+div.hero.allevamento {
+  background-image: url("../img/img15.jpg");
+}
+
+/* ---------- Fine Hero ---------- */
+
+/* ---------- Intro-Allevamento -----------*/
+section.intro-allevamento div.row div.text {
+  align-self: center;
+  justify-content: center;
+  font-size: 24px;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+/* ---------- Fine Intro-Allevamento -----------*/
+
+
+
+/* ------------------------------ FINE ALLEVAMENTO ------------------------------ */
+
+/* ------------------------------ GALLERIA ------------------------------ */
+/* ---------- Hero ---------- */
+div.hero.galleria {
+  background-image: url("../img/img11.jpg");
+}
+
+/* ---------- Fine Hero ---------- */
+
+.gallery-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.border {
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gellery-section .gallery.row .col-md-4 {
+  overflow: hidden;
+}
+
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image:hover img {
+  transition: 0.5s;
+  transform: scale(1.2) rotate(10deg);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+/* ------------------------------ FINE GALLERIA ------------------------------ */
+
+/* ------------------------------ CHI SIAMO ------------------------------ */
+
+/* ---------- La nostra storia -----------*/
+section.la-nostra-storia {
+  font-size: 24px;
+}
+
+section.la-nostra-storia ul li {
+  list-style-type: square;
+  margin-left: 50px;
+}
+
+/* ---------- Fine La nostra storia -----------*/
+/* ------------------------------ FINE CHI SIAMO ------------------------------ */
+
+
+/* ------------------------------ CONTATTACI ------------------------------ */
+/* ----- Info ----- */
+section.form div.info p {
+  color: #2e2e2e;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+section.form div.info ul li {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+section.form div.info ul li i {
+  padding-right: 15px;
+}
+
+/* ----- Fine Info ----- */
+
+/* ----- Module ----- */
+section.form div.module div.row {
+  margin-top: 25px;
+}
+
+section.form div.module div.row div.col {
+  padding: 0;
+}
+
+section.form div.module div.row label {
+  color: #2e2e2e;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* ----- Fine Module ----- */
+
+/* ------------------------------ FINE CONTATTACI ------------------------------ */

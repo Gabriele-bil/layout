@@ -23,7 +23,7 @@
 
 <body>
     <!-- Container Generale -->
-    <div class="container-fluid home">
+    <div class="container-fluid contattaci">
         <!-- Header -->
         <header>
             <!-- Pre Header-->
@@ -62,150 +62,93 @@
                     <img src="img/logo.png" alt="Logo Layout-Allevamento" class="logo" title="Torna alla Home" />
                 </a>
                 <ul>
-                    <li><a href="index.html" class="attivo">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="allevamento.html">Allevamento</a></li>
                     <li><a href="galleria.html">Galleria</a></li>
                     <li><a href="chisiamo.html">Chi Siamo</a></li>
-                    <li><a href="contattaci.html">Contattaci</a></li>
+                    <li><a href="contattaci.html" class="attivo">Contattaci</a></li>
                 </ul>
             </nav>
             <!-- Fine Navbar -->
         </header>
         <!-- Fine Header -->
 
-        <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="3000">
-                    <img src="img/background-hero.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item" data-interval="3000">
-                    <img src="img/img14.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item" data-interval="3000">
-                    <img src="img/img15.jpg" class="d-block w-100" alt="..." />
-                </div>
+        <!-- Hero -->
+        <div class="hero contattaci">
+            <div class="hero-text">
+                <h1>Contattaci</h1>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            <h1>Allevamento Capre Saanen</h1>
-            <h2>di Giovanni Bilello</h2>
         </div>
-        <!-- Fine Carousel -->
+        <!-- Fine Hero -->
 
         <!-- Main -->
         <main>
-            <!-- Intro-Home -->
-            <section class="container intro-home">
+            <section class="form container">
                 <div class="row">
-                    <div class="col-md-9">
-                        <h3>Qualità e Esperienza</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et
-                            cupiditate, in, accusamus laboriosam sequi distinctio
-                            consequuntur praesentium veniam quas enim ab iusto earum labore
-                            cumque fugiat minus odit quo incidunt tempora consequatur iste
-                            debitis accusantium obcaecati!
-                        </p>
+                    <div class="col-md-7 info">
+                        <h2>Rimani in contatto con noi</h2>
+                        <p>Siamo sempre pronti ad assisterti. Compila il modulo per chiedere informazioni, oppure
+                            contattaci utilizzando i nostri social</p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 - Palermo
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/393881786767"><i class="fab fa-whatsapp"></i>+39 388 178
+                                    6767</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="col-md-3">
-                        <a href="contattaci.html" class="btn btn-secondary contact">Contattaci</a>
-                    </div>
-                </div>
-            </section>
-            <!-- Fine Intro-Home -->
-
-            <!-- Call-Widget -->
-            <section class="container-fluid call-widget">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="call-box">
-                            <a href="allevamento.html">
-                                <img src="img/img19.jpg" alt="img1" class="img-responsive" />
-                                <div class="box-text">
-                                    <p class="info">Più Informazioni</p>
-                                    <h3>L'allevamento</h3>
-                                    <p class="hover-text">Scopri il nostro allevamento</p>
+                    <div class="col-md-5 module">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Il tuo nome (richiesto)</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="call-box">
-                            <a href="galleria.html">
-                                <img src="img/img11.jpg" alt="img1" class="img-responsive" />
-                                <div class="box-text">
-                                    <p class="info">Più Informazioni</p>
-                                    <h3>Galleria</h3>
-                                    <p class="hover-text">Guarda la nostra galleria</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="mail">La tua email (richiesto)</label>
+                                    <input type="text" class="form-control" id="mail" name="mail" required>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="call-box">
-                            <a href="chisiamo.html">
-                                <img src="img/img20.jpg" alt="img1" class="img-responsive" />
-                                <div class="box-text">
-                                    <p class="info">Più Informazioni</p>
-                                    <h3>Chi Siamo</h3>
-                                    <p class="hover-text">Scopri chi siamo</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="object">Oggetto</label>
+                                    <input type="text" class="form-control" id="object" name="object">
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="msg">Il tuo messaggio (richiesto)</label>
+                                    <textarea class="form-control" rows="4" id="msg" name="msg" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline"
+                                        required>
+                                    <label class="custom-control-label" for="customControlInline">Ho letto l'informativa
+                                        sulla <a href="privacypolicy.html">privacy</a></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="submit" class="btn btn-primary" id="customControlInline">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
-            <!-- Fine Call-Widget -->
-
-            <!-- Media-text -->
-            <section class="container media-text razza">
-                <h3>La Razza Saanen</h3>
-                <div class="row">
-                    <!-- Media -->
-                    <div class="col-md-8 media">
-                        <img src="img/img8.jpg" alt="img3" class="img-responsive" />
-                    </div>
-
-                    <!-- Text -->
-                    <div class="col-md-4 text">
-                        <p>
-                            La capra Saanen, originaria della svizzera, è famosa per la sua
-                            alta potenzialità produttiva, che la rende adeguata alla
-                            produzione di latte. Mansueta, curiosa e socievole, la rendono
-                            la capra adatta ad agriturismi e fattorie, e si presta
-                            facilmente all'interazione con i bambini.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- Fine Media-text -->
-
-            <!-- Parallasse -->
-            <section class="container-fluid parallax">
-                <div class="container">
-                    <h3>Vendita Capre Saanen</h3>
-                    <p>Se sei interessato all'acquisto di capre Saanen, le vendiamo dai 3 mesi in su, oppure adulti dai
-                        12 ai 24 mesi
-                    </p>
-                    <a href="contattaci.html" class="btn btn-secondary contact">Scopri di più</a>
-                </div>
-            </section>
-            <!-- Fine Parallasse -->
         </main>
         <!-- Fine Main -->
 
