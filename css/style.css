@@ -138,7 +138,7 @@ a:hover {
 
 main h1 {
   text-align: center;
-  text-decoration: underline rgb(167, 167, 167);
+  text-decoration: underline #A07473;
 }
 /* ---------- Hero -----------*/
 div.hero {
@@ -307,8 +307,8 @@ section.intro-home div.col-md-3 {
   justify-content: center;
 }
 
-a.contact {
-  background-color: #4b39d3;
+.contact {
+  background-color: #A07473;
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 35px;
@@ -316,8 +316,8 @@ a.contact {
   font-size: 20px;
 }
 
-a.contact:hover {
-  background-color: #3626a7;
+.contact:hover {
+  background-color: #A07473;
   transition: 0.3s ease-in-out;
 }
 
@@ -604,6 +604,10 @@ section.form div.info ul li {
 
 section.form div.info ul li i {
   padding-right: 15px;
+}
+
+div.contattaci .form a:hover {
+  color: #A07473;
 }
 
 /* ----- Fine Info ----- */
