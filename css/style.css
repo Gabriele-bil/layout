@@ -240,17 +240,17 @@ nav.container ul li a {
 }
 
 nav.container ul li a.attivo {
-  color: #3626a7;
+  color: #A07473;
   font-weight: 700;
 }
 
 nav.container ul li a:hover {
-  color: #3626a7;
+  color: #A07473;
   text-decoration: none;
 }
 
 span.circle-decoration {
-  background-color: #3626a7;
+  background-color: #A07473;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -478,7 +478,7 @@ footer .link-utili ul li a {
 
 footer .link-utili ul li a:hover {
   text-decoration: none;
-  color: #4b39d3;
+  color: #A07473;
 }
 
 /* ----- Fine Link Utili ----- */
