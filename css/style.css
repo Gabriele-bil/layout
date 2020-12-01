@@ -599,3 +599,14 @@ section.form div.module div.row label {
 /* ----- Fine Module ----- */
 
 /* ------------------------------ FINE CONTATTACI ------------------------------ */
+
+
+/* ------------------------------ Privacy-Policy ------------------------------ */
+div.privacy-policy h1{
+  font-size: 42px;
+}
+
+div.privacy-policy h2, div.privacy-policy h3{
+  font-size: 28px;
+}
+/* ------------------------------ Fine Privacy-Policy ------------------------------ */
