@@ -304,7 +304,7 @@ section.intro-home div.col-md-3 {
 }
 
 a.contact {
-  background-color: #3626a7;
+  background-color: #4b39d3;
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 35px;
@@ -313,7 +313,7 @@ a.contact {
 }
 
 a.contact:hover {
-  background-color: #86bbd8;
+  background-color: #3626a7;
   transition: 0.3s ease-in-out;
 }
 
