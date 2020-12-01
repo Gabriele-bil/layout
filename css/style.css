@@ -138,6 +138,7 @@ a:hover {
 
 main h1 {
   text-align: center;
+  text-decoration: underline rgb(167, 167, 167);
 }
 /* ---------- Hero -----------*/
 div.hero {
@@ -265,19 +266,20 @@ nav button.hamburgher-menu {
 
 /* ---------- Fine Header -----------*/
 
-/* ---------- Main -----------*/
 /* ----- Carousel ------*/
+
 div.carousel h1 {
   position: absolute;
-  top: 30%;
+  top: 55%;
   right: 10%;
   text-align: right;
   color: #fff;
+
 }
 
 div.carousel h2 {
   position: absolute;
-  top: 53%;
+  top: 77%;
   right: 10%;
   font-size: 56px;
   text-align: right;
@@ -285,6 +287,8 @@ div.carousel h2 {
 }
 
 /* ----- Fine Carousel ------*/
+
+/* ---------- Main -----------*/
 
 /* ----- Intro-Home ------*/
 section.intro-home div.col-md-9 p {
@@ -393,7 +397,7 @@ section.call-widget {
 section.parallax {
   margin-top: 100px;
   height: 500px;
-  background-image: url("../img/img5.jpg");
+  background-image: url("../img/caprette-saanen-6.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -435,21 +439,25 @@ footer .social ul li a i, footer .link-utili ul li a, footer .contatti ul li a, 
 footer h4 {
   font-size: 23px;
   font-weight: bold;
-  margin-top: 10px;
+
 }
 
 /* ----- Presentazione ----- */
 
 footer .social ul li {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 30px 40px;
 }
 
 footer .img-responsive {
-  width: 40%;
+  width: 30%;
   height: auto;
   margin-left: calc(100% / 2 - 20%);
-  
+  margin-bottom: 30px;
+}
+
+footer .fa-2x{
+  font-size: 2.25rem;
 }
 
 
@@ -500,7 +508,7 @@ footer .contatti ul li i {
 /* ------------------------------ ALLEVAMENTO ------------------------------ */
 /* ---------- Hero ---------- */
 div.hero.allevamento {
-  background-image: url("../img/img15.jpg");
+  background-image: url("../img/mungitura-capre-saanen.jpg");
 }
 
 /* ---------- Fine Hero ---------- */
@@ -532,10 +540,29 @@ iframe.maps {
 /* ------------------------------ GALLERIA ------------------------------ */
 /* ---------- Hero ---------- */
 div.hero.galleria {
-  background-image: url("../img/img11.jpg");
+  background-image: url("../img/caprette-saanen-2.jpg");
+}
+/* ---------- Fine Hero ---------- */
+
+/* ---------- Gallery Section ---------- */
+div.gallery-description{
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* ---------- Fine Hero ---------- */
+div.galleria main section.gallery-section {
+  margin-top: 0;
+}
+
+div.gallery-description h3{
+  font-size: 32px;
+}
+
+div.gallery-description p{
+  font-size: 18px;
+}
+/* ---------- Fine Gallery Section ---------- */
 /* ------------------------------ FINE GALLERIA ------------------------------ */
 
 /* ------------------------------ CHI SIAMO ------------------------------ */
@@ -556,7 +583,7 @@ section.la-nostra-storia ul li {
 
 /* ------------------------------ CONTATTACI ------------------------------ */
 div.hero.contattaci {
-  background-image: url("../img/img20.jpg");
+  background-image: url("../img/caprette-saanen-6.jpg");
 }
 /* ----- Info ----- */
 section.form div.info {
@@ -601,7 +628,7 @@ section.form div.module div.row label {
 /* ------------------------------ FINE CONTATTACI ------------------------------ */
 
 
-/* ------------------------------ Privacy-Policy ------------------------------ */
+/* ------------------------------ PRIVACY-POLICY ------------------------------ */
 div.privacy-policy h1{
   font-size: 42px;
 }
@@ -609,4 +636,4 @@ div.privacy-policy h1{
 div.privacy-policy h2, div.privacy-policy h3{
   font-size: 28px;
 }
-/* ------------------------------ Fine Privacy-Policy ------------------------------ */
+/* ------------------------------ Fine PRIVACY-POLICY ------------------------------ */

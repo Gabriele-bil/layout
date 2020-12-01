@@ -23,7 +23,7 @@ section {
     overflow: hidden;
     padding: 0;
     position: absolute;
-    margin-top: 500px;
+    margin-top: 800px;
 }
 .carousel > input:nth-of-type(14):checked
 ~ .carousel__slides
@@ -165,16 +165,20 @@ section {
     padding: 0;
     margin: 0;
     display: flex;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
-.carousel__slides + .carousel__thumbnails {
-    margin-top: 20px;
-}
+
 .carousel__thumbnails li {
     flex: 1 1 auto;
     max-width: calc((100% / 6) - 20px);
     margin: 0 10px;
     transition: all 300ms ease-in-out;
+}
+.li-left {
+    margin-left: 0!important;
+}
+.li-right {
+    margin-right: 0!important;
 }
 .carousel__thumbnails label {
     display: block;
