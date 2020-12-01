@@ -1,6 +1,75 @@
 /* ----- Regole Generali ------*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+
+
 body {
   background-color: #dedede;
+  font-family: 'Montserrat',
+    sans-serif;
 }
 
 .container-fluid,
@@ -17,8 +86,8 @@ h1 {
   font-size: 78px;
 }
 
-h3,
-h2 {
+h2,
+h3 {
   font-size: 48px;
 }
 
@@ -67,6 +136,9 @@ a:hover {
   transition: 0.3s ease-in-out;
 }
 
+main h1 {
+  text-align: center;
+}
 /* ---------- Hero -----------*/
 div.hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -95,8 +167,14 @@ div.hero {
 
 /* ----- PreNav ------*/
 .pre-nav {
-  background-color: #86bbd8;
+  background-color: rgb(31, 31, 31);
   height: 50px;
+  color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.9), 0 1px 1px 0 rgba(0,0,0,.9), 0 1px 3px 0 rgba(0,0,0,.9);
+}
+
+.pre-nav a, .pre-nav i {
+  color: #fff;
 }
 
 .pre-nav .left,
@@ -135,10 +213,14 @@ nav.container {
   height: 100px;
 }
 
+nav.container .nav-responsive {
+  display: inline;
+}
+
 nav.container img.logo {
-  width: 222px;
-  height: 52.66px;
-  margin-top: 23.7px;
+  height: 80%;
+  width: auto;
+  margin-top: 10px;
 }
 
 nav.container ul {
@@ -175,12 +257,16 @@ span.circle-decoration {
   margin: -30px auto 0 auto;
 }
 
+nav button.hamburgher-menu {
+  display: none;
+}
+
 /* ----- Fine Navbar ------*/
 
 /* ---------- Fine Header -----------*/
 
 /* ---------- Main -----------*/
-/* ----- Hero ------*/
+/* ----- Carousel ------*/
 div.carousel h1 {
   position: absolute;
   top: 30%;
@@ -198,13 +284,18 @@ div.carousel h2 {
   color: #fff;
 }
 
-/* ----- Fine Hero ------*/
+/* ----- Fine Carousel ------*/
 
 /* ----- Intro-Home ------*/
 section.intro-home div.col-md-9 p {
   text-align: justify;
   line-height: 30px;
   text-align: justify;
+  font-size: 22px;
+}
+
+section.intro-home cite{
+  font-size: 18px;
 }
 
 section.intro-home div.col-md-3 {
@@ -229,8 +320,14 @@ a.contact:hover {
 /* ----- Fine Intro-Home ------*/
 
 /* ----- Call-Widget ------*/
+section.call-widget {
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
 .call-widget div.call-box {
   position: relative;
+  margin: 0 10px;
 }
 
 .call-widget div.call-box a {
@@ -276,9 +373,13 @@ a.contact:hover {
 /* ----- Fine Call-Widget ------*/
 
 /* ----- Media-text Razza ----- */
-.media-text.razza .row .text {
-  align-self: center;
-  justify-content: center;
+.media-text.razza h3 {
+  margin-bottom: 24px;
+}
+
+.media-text.razza .col-md-8.media {
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 .media-text.razza .text p {
@@ -312,12 +413,14 @@ section.parallax div.container p {
 
 /* ----- Fine Parallasse ----- */
 
-/* ---------- Fine Main -----------*/
+/* ---------- Fine Main ----------- */
 
-/* ---------- Footer -----------*/
+/* ---------- Footer ----------- */
 footer {
   margin-top: 100px;
-  background-color: #86bbd8;
+  background-color: rgb(31, 31, 31);
+  box-shadow: 0 -2px 2px -2px rgba(0,0,0,.6), 0 -1px 2px 0 rgba(0,0,0,.6), 0 -1px 4px 0 rgba(0,0,0,.6);
+  color: #fff;
 }
 
 footer .row {
@@ -325,63 +428,65 @@ footer .row {
   padding-bottom: 50px;
 }
 
-/* ----- Presentazione ----- */
-footer .social {
-  text-align: center;
+footer .social ul li a i, footer .link-utili ul li a, footer .contatti ul li a, footer i{
+  color: #fff;
 }
+
+footer h4 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ----- Presentazione ----- */
 
 footer .social ul li {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 40px;
 }
 
-footer .social ul li a i {
-  color: #000;
+footer .img-responsive {
+  width: 40%;
+  height: auto;
+  margin-left: calc(100% / 2 - 20%);
+  
 }
+
 
 /* ----- Fine Presentazione ----- */
 
 /* ----- Link Utili ----- */
 footer .link-utili {
-  text-align: center;
+  padding-left: 8%;
 }
 
-footer .link-utili h4 {
-  font-size: 32px;
+footer .link-utili ul li {
+  font-size: 18px;
+  padding: 10px 0;
 }
-
 footer .link-utili ul li a {
-  color: #000;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 footer .link-utili ul li a:hover {
   text-decoration: none;
-  color: #3626a7;
+  color: #4b39d3;
 }
 
 /* ----- Fine Link Utili ----- */
 
 /* ----- Contatti ----- */
-footer .contatti {
-  text-align: right;
-}
 
-footer .contatti h4 {
-  font-size: 32px;
-}
-
-footer .contatti h5,
-footer .contatti ul li {
-  font-size: 20px;
+footer .contatti h5, footer .contatti ul li {
+  font-size: 18px;
+  line-height: initial;
 }
 
 footer .contatti ul li {
-  padding: 10px 0 10px 25px;
-}
-
-footer .contatti ul li a {
-  color: #000;
+  padding: 10px 0;
+  height: 47px;
+  line-height:1.5;
+  
 }
 
 footer .contatti ul li i {
@@ -401,9 +506,11 @@ div.hero.allevamento {
 /* ---------- Fine Hero ---------- */
 
 /* ---------- Intro-Allevamento -----------*/
+section.intro-allevamento h2 {
+  margin-bottom: 24px;
+}
+
 section.intro-allevamento div.row div.text {
-  align-self: center;
-  justify-content: center;
   font-size: 24px;
   text-align: justify;
   padding-right: 20px;
@@ -411,7 +518,14 @@ section.intro-allevamento div.row div.text {
 
 /* ---------- Fine Intro-Allevamento -----------*/
 
+/* ---------- Maps -----------*/
+iframe.maps {
+  margin-top: 100px;
+  width: 99vw;
+  height: 600px;
+}
 
+/* ---------- Fine Maps -----------*/
 
 /* ------------------------------ FINE ALLEVAMENTO ------------------------------ */
 
@@ -422,60 +536,6 @@ div.hero.galleria {
 }
 
 /* ---------- Fine Hero ---------- */
-
-.gallery-section {
-  width: 100%;
-  padding: 60px 0;
-  background: #f1f1f1;
-}
-
-.inner-width {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.border {
-  width: 180px;
-  height: 4px;
-  background: #333;
-  margin: 60px auto;
-}
-
-.gellery-section .gallery.row .col-md-4 {
-  overflow: hidden;
-}
-
-.gallery-section .image {
-  flex: 25%;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.gallery-section .image:hover img {
-  transition: 0.5s;
-  transform: scale(1.2) rotate(10deg);
-}
-
-@media screen and (max-width:960px) {
-  .gallery-section .image {
-    flex: 33.33%;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .gallery-section .image {
-    flex: 50%;
-  }
-}
-
-@media screen and (max-width:480px) {
-  .gallery-section .image {
-    flex: 100%;
-  }
-}
-
 /* ------------------------------ FINE GALLERIA ------------------------------ */
 
 /* ------------------------------ CHI SIAMO ------------------------------ */
@@ -495,7 +555,15 @@ section.la-nostra-storia ul li {
 
 
 /* ------------------------------ CONTATTACI ------------------------------ */
+div.hero.contattaci {
+  background-image: url("../img/img20.jpg");
+}
 /* ----- Info ----- */
+section.form div.info {
+  padding-left: 0;
+  padding-right: 32px;
+}
+
 section.form div.info p {
   color: #2e2e2e;
   font-size: 22px;
@@ -515,7 +583,7 @@ section.form div.info ul li i {
 
 /* ----- Module ----- */
 section.form div.module div.row {
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 section.form div.module div.row div.col {

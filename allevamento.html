@@ -15,9 +15,15 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/efc215ed17.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <title>Layout-Allevamento</title>
 </head>
 
@@ -25,16 +31,16 @@
     <!-- Container Generale -->
     <div class="container-fluid allevamento">
         <!-- Header -->
-        <header>
+        <header class="fade-in one">
             <!-- Pre Header-->
             <div class="pre-nav">
                 <div class="left">
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 - Palermo
+                            <i class="fas fa-map-marker"></i>Contrada San Basilio Collesano - PA
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                            <i class="fas fa-envelope"></i><a href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                         </li>
                         <li><i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a></li>
                     </ul>
@@ -61,39 +67,46 @@
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo Layout-Allevamento" class="logo" title="Torna alla Home" />
                 </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="allevamento.html" class="attivo">Allevamento</a></li>
-                    <li><a href="galleria.html">Galleria</a></li>
-                    <li><a href="chisiamo.html">Chi Siamo</a></li>
-                    <li><a href="contattaci.html">Contattaci</a></li>
-                </ul>
+                <button class="hamburgher-menu">
+                    <img src="img/menu-icon-button.png" alt="Menù di navigazione" class="img-responsive">
+                </button>
+                <div class="nav-responsive">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allevamento.html" class="attivo">Allevamento</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contattaci.html">Contattaci</a></li>
+                    </ul>
+                </div>
             </nav>
             <!-- Fine Navbar -->
         </header>
         <!-- Fine Header -->
 
         <!-- Hero -->
-        <div class="hero allevamento">
-            <div class="hero-text">
-                <h1>Il nostro allevamento</h1>
-            </div>
-        </div>
+        <div class="hero allevamento fade-in two"></div>
         <!-- Fine Hero -->
 
         <!-- Main -->
         <main>
+            <h1 class="fade-in three">Il nostro allevamento</h1>
             <section class="container intro-allevamento">
                 <h2>Località</h2>
                 <div class="row">
                     <div class="col-md-4 text">
-                        <p>Il nostro allevamento si trova a Collessano C.da San Basilio, nella provincia di Palermo. Il
+                        <p>Il nostro allevamento si trova a <strong>Collesano</strong> C.da San Basilio, nella
+                            provincia di Palermo. Il
                             terreno
-                            offre, per merito della sua dimensione, tutti gli spazi perfetti per un gregge di Capre
-                            Saanen, tra
-                            ampie zone per il pascolo, all'aperto e al coperto, zone per la latteria per la mungitura e
-                            tutto
-                            ciò di cui ha bisogno un allevatore e il suo pascolo.</p>
+                            offre, per merito della sua dimensione, tutti gli spazi perfetti per un gregge di
+                            <strong>Capre
+                                Saanen</strong>, tra
+                            ampie zone per il pascolo, all'aperto e al coperto. <strong>Il latte</strong> appena munto
+                            viene ritirato da
+                            un caseificio di zona <strong><a
+                                    href="https://www.caseificiosannicola.it/product/formaggio-tale-di-capra/"
+                                    target="_blank">
+                                    Caseificio San
+                                    Nicola</a></strong> che produce ottimi caprini.</p>
                     </div>
                     <div class="col-md-8">
                         <img src="img/img19.jpg" alt="Immagine Allevamento Capre Saanen Collesano"
@@ -102,47 +115,40 @@
                 </div>
             </section>
 
-
-            <section class="container gallery-allevamento">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>First slide label</h4>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>Second slide label</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>Third slide label</h4>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div>
-                        </div>
+            <section class="container intro-allevamento">
+                <h2 class="text-right">Alimentazione</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/img22.jpg" alt="Immagine Allevamento Capre Saanen Collesano"
+                            class="img-responsive">
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+
+                    <div class="col-md-4 text">
+                        <p>Gli animali vengono alimentati con del fieno prodotto in azienda e un mix di cereali fioccati
+                            realizzato da noi e tempo permettendo le caprette escono a pascolare nei grandi prati
+                            offerti dal terreno aziendale</p>
+                    </div>
                 </div>
             </section>
+
+            <section class="container la-nostra-storia">
+                <h2>La nostra storia</h2>
+                <p>L'allevamento capre saanen è un'azienda agricola a carattere familiare in cui lavoro io
+                    <strong>Giovanni Bilello</strong>. Le capre sono state acquistate nel 2015 provenienti dalla
+                    sardegna ad un età di 10 mesi già gravide, esse appartengono alla
+                    razza <strong>Saanen</strong>, questa razza infatti è famosa per la sua alta produttività e il suo
+                    latte per
+                    il suo carattere docile.</p>
+                <p>L'azienda è composta da: </p>
+                <ul>
+                    <li>Da 50 capre saanen adulte</li>
+                    <li>Una capretteria che accoglie i capretti per il loro svezzamento</li>
+                    <li>Un ampio terreno per il pascolo</li>
+                </ul>
+            </section>
+
+            <!-- Map-->
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1328.4859380021335!2d13.893342929276283!3d37.94033955639723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x131749c62abdcdd1%3A0xdddc1999f5265eb2!2s90016%20Collesano%20PA!5e1!3m2!1sit!2sit!4v1606823378170!5m2!1sit!2sit"></iframe>    
         </main>
         <!-- Fine Main -->
 
@@ -150,7 +156,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 presentazione">
-                        <img src="img/logo.png" alt="Logo" class="img-responsive" />
+                        <img src="img/logo-bianco.png" alt="Logo" class="img-responsive" />
                         <h4>Ti Aspettiamo in Allevamento</h4>
                         <h4>Oppure visita i nostri social</h4>
                         <div class="social">
@@ -176,7 +182,6 @@
                             <li><a href="index.html" class="attivo">Home</a></li>
                             <li><a href="allevamento.html">Allevamento</a></li>
                             <li><a href="galleria.html">Galleria</a></li>
-                            <li><a href="chisiamo.html">Chi Siamo</a></li>
                             <li><a href="contattaci.html">Contattaci</a></li>
                         </ul>
                     </div>
@@ -189,12 +194,12 @@
                             </h5>
                             <h6>
                                 <li>
-                                    <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 -
-                                    Palermo
+                                    <i class="fas fa-map-marker"></i>C.da San Basilio Collesano - PA
                                 </li>
                             </h6>
                             <li>
-                                <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                                <i class="fas fa-envelope"></i><a
+                                    href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>

@@ -15,9 +15,15 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/efc215ed17.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <title>Layout-Allevamento</title>
 </head>
 
@@ -25,16 +31,16 @@
     <!-- Container Generale -->
     <div class="container-fluid contattaci">
         <!-- Header -->
-        <header>
+        <header class="fade-in one">
             <!-- Pre Header-->
             <div class="pre-nav">
                 <div class="left">
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 - Palermo
+                            <i class="fas fa-map-marker"></i>Contrada San Basilio Collesano - PA
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                            <i class="fas fa-envelope"></i><a href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                         </li>
                         <li><i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a></li>
                     </ul>
@@ -61,40 +67,42 @@
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo Layout-Allevamento" class="logo" title="Torna alla Home" />
                 </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="allevamento.html">Allevamento</a></li>
-                    <li><a href="galleria.html">Galleria</a></li>
-                    <li><a href="chisiamo.html">Chi Siamo</a></li>
-                    <li><a href="contattaci.html" class="attivo">Contattaci</a></li>
-                </ul>
+                <button class="hamburgher-menu">
+                    <img src="img/menu-icon-button.png" alt="Menù di navigazione" class="img-responsive">
+                </button>
+                <div class="nav-responsive">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allevamento.html">Allevamento</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contattaci.html" class="attivo">Contattaci</a></li>
+                    </ul>
+                </div>
             </nav>
             <!-- Fine Navbar -->
         </header>
         <!-- Fine Header -->
 
         <!-- Hero -->
-        <div class="hero contattaci">
-            <div class="hero-text">
-                <h1>Contattaci</h1>
-            </div>
-        </div>
+        <div class="hero contattaci fade-in two"></div>
         <!-- Fine Hero -->
 
         <!-- Main -->
         <main>
+            <h1 class="fade-in three">Contattaci</h1>
             <section class="form container">
                 <div class="row">
+                    <h2>Rimani in contatto con noi</h2>
                     <div class="col-md-7 info">
-                        <h2>Rimani in contatto con noi</h2>
                         <p>Siamo sempre pronti ad assisterti. Compila il modulo per chiedere informazioni, oppure
                             contattaci utilizzando i nostri social</p>
                         <ul>
                             <li>
-                                <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 - Palermo
+                                <i class="fas fa-map-marker"></i>Contrada San Basilio Collesano - PA
                             </li>
                             <li>
-                                <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                                <i class="fas fa-envelope"></i><a
+                                    href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>
@@ -107,7 +115,7 @@
                     </div>
 
                     <div class="col-md-5 module">
-                        <form>
+                        <form action="mail.php" method="POST">
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Il tuo nome (richiesto)</label>
@@ -142,7 +150,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="submit" class="btn btn-primary" id="customControlInline">
+                                    <input type="submit" class="btn btn-primary" id="customControlInline" name="invia" id="invia">
                                 </div>
                             </div>
                         </form>
@@ -156,7 +164,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 presentazione">
-                        <img src="img/logo.png" alt="Logo" class="img-responsive" />
+                        <img src="img/logo-bianco.png" alt="Logo" class="img-responsive" />
                         <h4>Ti Aspettiamo in Allevamento</h4>
                         <h4>Oppure visita i nostri social</h4>
                         <div class="social">
@@ -182,7 +190,6 @@
                             <li><a href="index.html" class="attivo">Home</a></li>
                             <li><a href="allevamento.html">Allevamento</a></li>
                             <li><a href="galleria.html">Galleria</a></li>
-                            <li><a href="chisiamo.html">Chi Siamo</a></li>
                             <li><a href="contattaci.html">Contattaci</a></li>
                         </ul>
                     </div>
@@ -195,12 +202,12 @@
                             </h5>
                             <h6>
                                 <li>
-                                    <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 -
-                                    Palermo
+                                    <i class="fas fa-map-marker"></i>C.da San Basilio Collesano - PA
                                 </li>
                             </h6>
                             <li>
-                                <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                                <i class="fas fa-envelope"></i><a
+                                    href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>

@@ -28,13 +28,26 @@ $(document).ready(function () {
         }
     );
 
-    /* Magnific Popup */
+
+    /* Hamburgher Menù Responsive */
+    $("button.hamburgher-menu img").click(function () {
+        $("div.nav-responsive").slideToggle();
+    });
+
+/*
+     Magnific-Popup 
     $(".gallery").magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery: {
             enabled: true
         }
-    });
+    }); 
+*/
 
+    /* Carousel Gallery Thumb Image Border */
+    $('ul.carousel__thumbnails li').click(function() {
+        $('ul.carousel__thumbnails li').removeClass('img-thumb-clicked');
+        $(this).addClass('img-thumb-clicked');
+    })
 })

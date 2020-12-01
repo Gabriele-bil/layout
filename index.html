@@ -15,9 +15,15 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/efc215ed17.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <title>Layout-Allevamento</title>
 </head>
 
@@ -25,18 +31,20 @@
     <!-- Container Generale -->
     <div class="container-fluid home">
         <!-- Header -->
-        <header>
+        <header class="fade-in one">
             <!-- Pre Header-->
             <div class="pre-nav">
                 <div class="left">
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 - Palermo
+                            <i class="fas fa-map-marker"></i>Contrada San Basilio Collesano - PA
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                            <i class="fas fa-envelope"></i><a href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                         </li>
-                        <li><i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a></li>
+                        <li>
+                            <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="right">
@@ -61,20 +69,25 @@
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo Layout-Allevamento" class="logo" title="Torna alla Home" />
                 </a>
-                <ul>
-                    <li><a href="index.html" class="attivo">Home</a></li>
-                    <li><a href="allevamento.html">Allevamento</a></li>
-                    <li><a href="galleria.html">Galleria</a></li>
-                    <li><a href="chisiamo.html">Chi Siamo</a></li>
-                    <li><a href="contattaci.html">Contattaci</a></li>
-                </ul>
+                <button class="hamburgher-menu">
+                    <img src="img/menu-icon-button.png" alt="Menù di navigazione" class="img-responsive">
+                </button>
+                <div class="nav-responsive">
+                    <ul>
+                        <li><a href="index.html" class="attivo">Home</a></li>
+                        <li><a href="allevamento.html">Allevamento</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contattaci.html">Contattaci</a></li>
+                    </ul>
+                </div>
+
             </nav>
             <!-- Fine Navbar -->
         </header>
         <!-- Fine Header -->
 
         <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide fade-in one" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -99,24 +112,25 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-            <h1>Allevamento Capre Saanen</h1>
-            <h2>di Giovanni Bilello</h2>
+            <h1 class="fade-in two">Allevamento Capre Saanen</h1>
+            <h2 class="fade-in three">di Giovanni Bilello</h2>
         </div>
         <!-- Fine Carousel -->
-
+        
         <!-- Main -->
         <main>
             <!-- Intro-Home -->
             <section class="container intro-home">
                 <div class="row">
                     <div class="col-md-9">
-                        <h3>Qualità e Esperienza</h3>
+                        <h3>Benessere Animale</h3>
+                        <cite>"Il benessere è uno stato di salute completo, sia fisico che mentale, in cui
+                        l'animale è in
+                        armonia con il suo ambiente” (Hughes, 1976).</cite>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et
-                            cupiditate, in, accusamus laboriosam sequi distinctio
-                            consequuntur praesentium veniam quas enim ab iusto earum labore
-                            cumque fugiat minus odit quo incidunt tempora consequatur iste
-                            debitis accusantium obcaecati!
+                            Gli animali hanno ampio prato per pascolare all'aperto, inoltre hanno uno spazio al coperto
+                            per offrire loro un riparo dalla pioggia e dal freddo. Per garantire loro un ottimo stato di
+                            salute.
                         </p>
                     </div>
 
@@ -199,7 +213,8 @@
             <section class="container-fluid parallax">
                 <div class="container">
                     <h3>Vendita Capre Saanen</h3>
-                    <p>Se sei interessato all'acquisto di capre Saanen, le vendiamo dai 3 mesi in su, oppure adulti dai
+                    <p>Se sei interessato all'acquisto di caprette e capretti Saanen, le vendiamo dai 3 mesi in su,
+                        oppure adulti dai
                         12 ai 24 mesi
                     </p>
                     <a href="contattaci.html" class="btn btn-secondary contact">Scopri di più</a>
@@ -213,9 +228,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 presentazione">
-                        <img src="img/logo.png" alt="Logo" class="img-responsive" />
+                        <a href="index.html">
+                            <img src="img/logo-bianco.png" alt="Logo Bianco Layout-Allevamento" class="img-responsive" title="Torna alla Home" />
+                        </a>
                         <h4>Ti Aspettiamo in Allevamento</h4>
-                        <h4>Oppure visita i nostri social</h4>
+                        <h5>Oppure visita i nostri social</h5>
                         <div class="social">
                             <ul>
                                 <li>
@@ -239,7 +256,6 @@
                             <li><a href="index.html" class="attivo">Home</a></li>
                             <li><a href="allevamento.html">Allevamento</a></li>
                             <li><a href="galleria.html">Galleria</a></li>
-                            <li><a href="chisiamo.html">Chi Siamo</a></li>
                             <li><a href="contattaci.html">Contattaci</a></li>
                         </ul>
                     </div>
@@ -252,12 +268,12 @@
                             </h5>
                             <h6>
                                 <li>
-                                    <i class="fas fa-map-marker"></i>Via Saitta Longhi, 26 -
-                                    Palermo
+                                    <i class="fas fa-map-marker"></i>C.da San Basilio Collesano - PA
                                 </li>
                             </h6>
                             <li>
-                                <i class="fas fa-envelope"></i><a href="mailto:email@email.it">email@email.it</a>
+                                <i class="fas fa-envelope"></i><a
+                                    href="mailto:infocapre@libero.it">infocapre@libero.it</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i><a href="tel:388-178-6767">+39 388 178 6767</a>
@@ -280,3 +296,4 @@
 </body>
 
 </html>
+    
