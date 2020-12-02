@@ -18,7 +18,7 @@ $(document).ready(function () {
     );
 
     /* Hover link Nav */
-    if ($(window).width()>768) {
+    if ($(window).width()>1024) {
         var spanCircle = $("<span class='circle-decoration'></span>")
         $("nav ul li a").hover(
             function () {
@@ -34,7 +34,6 @@ $(document).ready(function () {
     var isOpenMenu = false;
     $("button.hamburgher-menu img").click(function () {
         $("div.nav-responsive").slideToggle();
-        $('div.carousel').finish();
         if (!isOpenMenu) {
             $('div.carousel').animate({marginTop: '225px', transition: '0.2 ease-in-out'});
             $('div.hero').animate({marginTop: '225px', transition: '0.2 ease-in-out'});

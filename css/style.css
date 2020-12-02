@@ -78,7 +78,7 @@ body {
   padding: 0;
 }
 
-.col-md-4 {
+.col-lg-4 {
   padding: 0;
 }
 
@@ -291,7 +291,7 @@ div.carousel h2 {
 /* ---------- Main -----------*/
 
 /* ----- Intro-Home ------*/
-section.intro-home div.col-md-9 p {
+section.intro-home div.col-lg-9 p {
   text-align: justify;
   line-height: 30px;
   text-align: justify;
@@ -317,7 +317,7 @@ section.intro-home div.col-md-3 {
 }
 
 .contact:hover {
-  background-color: #A07473;
+  background-color: #bd6f6d;
   transition: 0.3s ease-in-out;
 }
 
@@ -346,18 +346,18 @@ section.call-widget {
   text-align: center;
 }
 
-.call-widget div.col-md-4 div.box-text p {
+.call-widget div.col-lg-4 div.box-text p {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 24px;
 }
 
-.call-widget div.col-md-4 div.box-text h3 {
+.call-widget div.col-lg-4 div.box-text h3 {
   font-size: 32px;
 }
 
-.call-widget div.col-md-4 div.box-text p.info::before,
-.call-widget div.col-md-4 div.box-text p.info::after {
+.call-widget div.col-lg-4 div.box-text p.info::before,
+.call-widget div.col-lg-4 div.box-text p.info::after {
   content: "";
   display: inline-block;
   position: relative;
@@ -368,7 +368,7 @@ section.call-widget {
   background: rgba(255, 255, 255, 0.24);
 }
 
-.call-widget div.col-md-4 div.box-text p.hover-text {
+.call-widget div.col-lg-4 div.box-text p.hover-text {
   display: none;
   margin-top: 20%;
   font-size: 28px;

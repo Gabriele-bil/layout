@@ -15,19 +15,92 @@
 /*  -------------------- Tablets in portrait mode, large display smartphones landscape mode -------------------- */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
- 
+    /*----- Regole Generali ------ */
+    h1{
+        font-size: 42px;
+    }
+
+    h2, div.carousel h2{
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    section.intro-home div.col-lg-9 p, .media-text.razza .text p, p {
+        font-size: 16px;
+    }
+
+    section.intro-home cite {
+        font-size: 14px;
+    }
+
+    /*----- Fine Regole Generali ------ */
+
+    /*----- PreNav ------ */
+    header {
+        display: block;
+        overflow: auto;
+    }
+
+    .pre-nav .left {
+        background-color: rgb(31, 31, 31);
+        text-align: center;
+    }
+
+    .pre-nav .left ul li {
+        display: inline-block;
+    }
+
+    .pre-nav .right {
+        display: none;
+      }
+    /*----- Fine PreNav ------ */
+
+    /*----- Carousel ------ */
+    h1.fade-in.two{
+        bottom: 45%;
+        right: 12%;        
+    }
+
+    h2.fade-in.three{
+        bottom: 30%;
+        right: 12%;        
+    }
+    /*----- Fine Carousel ------ */
+
+    /*----- Intro-Home ------ */
+    .media-text.razza .text p{
+        line-height: 30px;
+    }
+    /*----- Fine Intro-Home ------ */
+
+    /*----- Call-widget ------ */
+    div.row .col-lg-4{
+        margin-bottom: 20px;
+    }
+    /*----- Fine Call-widget ------ */
+
     /* ---------- Footer ----------- */
     footer .social ul li {
         padding: 10px;
     }
     /* ---------- Fine Footer ----------- */
+
+    /* ---------- Privacy Policy ----------- */
+    div.privacy-policy h1{
+        font-size: 38px;
+    }
+    /* ---------- Fine Privacy Policy ----------- */
+
 }
 
 
 
 /*  -------------------- Smartphones in landscape mode -------------------- */
 
-@media only screen and (min-width: 421px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     /*----- PreNav ------ */
     header {
         display: block;
@@ -129,10 +202,10 @@
         font-size: 22px;
         margin-bottom: 0;
     }
-    h3, .call-widget div.col-md-4 div.box-text h3, div.gallery-description h3, div.privacy-policy h3{
+    h3, .call-widget div.col-lg-4 div.box-text h3, div.gallery-description h3, div.privacy-policy h3{
         font-size: 20px;
     }
-    p, div.col-md-9 cite, section.intro-home div.col-md-9 p, .media-text.razza .text p, .call-widget div.col-md-4 div.box-text p, .contact, section li{
+    p, div.col-lg-9 cite, section.intro-home div.col-lg-9 p, .media-text.razza .text p, .call-widget div.col-lg-4 div.box-text p, .contact, section li{
         font-size: 18px;
     }
 
@@ -151,7 +224,7 @@
         width: 160px;
     }
 
-    div.row .col-md-4{
+    div.row .col-lg-4{
         margin-bottom: 20px;
     }
 
@@ -159,7 +232,7 @@
         margin-top: 0;
     }
 
-    div.row .col-md-4 p{
+    div.row .col-lg-4 p{
         margin-top: 20px;
     }
 
@@ -235,29 +308,3 @@
     }
     /* ----- Fine Privacy Policy ----- */
 }
-
-
-
-/*  -------------------- Smartphones in portrait mode  -------------------- */
-
-@media only screen and (max-width: 420px) {
-
-    /*----- PreNav ------ */
-    .pre-nav .left ul {
-        text-align: center;
-    }
-
-    .pre-nav .left ul li {
-        padding: 0 10px;
-    }
-
-    .pre-nav .right {
-        display: none;
-      }
-    /*----- Fine PreNav ------ */
-
-
-
-}
-
-
