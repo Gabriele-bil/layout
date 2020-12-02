@@ -1,75 +1,66 @@
 /*  -------------------- Tablets in landscape mode, older desktop monitors--------------------  */
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* ---------- Footer ----------- */
+    footer .social ul li {
+        padding: 20px;
+    }
+    /* ---------- Fine Footer ----------- */
+
+
+}
 
 
 
 /*  -------------------- Tablets in portrait mode, large display smartphones landscape mode -------------------- */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-    /* -------------- REGOLE GENERALI  -------------- */
-
-
-    /* -------------- FINE REGOLE GENERALI  -------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
+ 
+    /* ---------- Footer ----------- */
+    footer .social ul li {
+        padding: 10px;
+    }
+    /* ---------- Fine Footer ----------- */
 }
 
 
 
 /*  -------------------- Smartphones in landscape mode -------------------- */
 
-@media only screen and (min-width: 421px) and (max-width: 767px) {}
-
-
-
-/*  -------------------- Smartphones in portrait mode  -------------------- */
-
-@media only screen and (max-width: 420px) {
-
-    /* -------------- REGOLE GENERALI  -------------- */
-    h1 {
-        font-size: 35px;
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+    /*----- PreNav ------ */
+    header {
+        display: block;
+        overflow: auto;
     }
 
-    h2 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 1.2;
+    .pre-nav .left {
+        background-color: rgb(31, 31, 31);
+        text-align: center;
     }
 
-    h3 {
-        font-size: 25px;
+    .pre-nav .left ul li {
+        display: inline-block;
     }
 
-    p {
-        font-size: 18px;
-    }
-
-    main section {
-        margin-top: 50px !important;
-    }
-
-    /* -------------- FINE REGOLE GENERALI  -------------- */
-
-    /* -------------- INDEX -------------- */
-    /* ---------- Header ----------- */
-
-    /* ----- PreNav ------*/
-    .pre-nav {
+    .pre-nav .right {
         display: none;
-    }
+      }
+    /*----- Fine PreNav ------ */
 
-    /* ----- Fine PreNav ------*/
-
+    
     /* ----- Navbar ------*/
     nav.container div.nav-responsive {
+        margin-top: 16px;
         display: none;
         position: relative;
-        z-index: 50;
-        background-color: #fff;
+        z-index: 10;
+        background-color: rgb(31, 31, 31);
         -webkit-box-shadow: 2px 10px 10px 1px rgba(196, 196, 196, 1);
         -moz-box-shadow: 2px 10px 10px 1px rgba(196, 196, 196, 1);
         box-shadow: 2px 10px 10px 1px rgba(196, 196, 196, 1);
+        color: #fff;
+        margin-bottom: 25px;
     }
 
     nav.container ul {
@@ -84,6 +75,10 @@
         line-height: 50px;
     }
 
+    nav.container ul li a {
+        color: #fff;
+    }
+
     nav button.hamburgher-menu {
         display: inline-block;
         width: 63px;
@@ -96,98 +91,173 @@
         margin-top: 20px;
         margin-left: 15px;
     }
-
     /* ----- Fine Navbar ------*/
 
-    /* ----- Carousel ------*/
-    div.home div.carousel,
-    div.home div.carousel img {
-        width: 100%;
-        height: 200px;
+    /* ----- Carousel ------ */
+    div.carousel {
+        margin-top: 0px;
+    }
+    /* ----- Fine Hero ------ */
+
+
+    /* ----- Hero ------ */
+    div.hero {
+        height: 30vh;
+    }
+    /* ----- Fine Hero ------ */
+
+    /* ----- Main ------ */
+    main section{
+        margin-top: 40px;
+    }
+    
+    h1.fade-in.two{
+        bottom: 45%;
+        right: 12%;        
     }
 
-    div.carousel h1,
-    div.carousel h2 {
-        width: 250px;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
+    h2.fade-in.three{
+        bottom: 30%;
+        right: 12%;        
     }
 
-    div.carousel h2 {
-        top: 70%;
+    h1{
         font-size: 24px;
-        transform: translate(-50%, -30%);
     }
 
-    div.home a.carousel-control-next,
-    div.home a.carousel-control-prev {
-        display: none;
+    h2, h2.fade-in.three {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    h3, .call-widget div.col-md-4 div.box-text h3, div.gallery-description h3, div.privacy-policy h3{
+        font-size: 20px;
+    }
+    p, div.col-md-9 cite, section.intro-home div.col-md-9 p, .media-text.razza .text p, .call-widget div.col-md-4 div.box-text p, .contact, section li{
+        font-size: 18px;
     }
 
-    /* ----- Fine Carousel ------*/
+    .media-text.razza .text p{
+        line-height: 30px;
+        margin-top: 16px;
+    }
+    
+    .col-md-3.contact{
+        margin: 0 calc(100% / 2 - 100px);
+    }
+
+    .container a.btn-secondary.contact{
+        margin: 0 calc(100% / 2 - 80px);
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    div.row .col-md-4{
+        margin-bottom: 20px;
+    }
+
+    div.row div:first-child p{
+        margin-top: 0;
+    }
+
+    div.row .col-md-4 p{
+        margin-top: 20px;
+    }
+
+    section.parallax{
+        margin-top:0;
+    }
 
 
-    /* ----- Intro-Home ------*/
-    section.intro-home div.row div.col-md-3 {
+     /* ----- Fine Main ------ */
+
+
+    
+    /* ----- Footer ------*/
+    footer .social ul li {
+        padding: 10px;
+    }
+
+    footer .img-responsive {
+        margin-left: 10px;
+    }
+
+    footer .contatti, footer .presentazione, footer .link-utili {
         text-align: center;
-    }
-
-    /* ----- Fine Intro-Home ------*/
-
-
-    /* ----- Call-Widget ------*/
-    div.call-box {
-        margin-top: 25px;
-    }
-
-    /* ----- Fine Call-Widget ------*/
-
-    /* ----- Media-text Razza ----- */
-    .media-text.razza .text p {
-        margin-top: 12.5px;
-        font-size: 1rem;
-        line-height: 25px;
-        text-align: justify;
-    }
-
-    /* ----- Fine Media-text Razza ----- */
-
-    /* ----- Paralax ----- */
-    section.parallax div.container {
-        padding-top: 120px;
-    }
-
-    /* ----- Fine Paralax ----- */
-
-    /* ---------- Footer -----------*/
-    footer h4,
-    footer .contatti {
-        text-align: center;
+        margin-bottom: 36px;
     }
 
     footer .link-utili {
-        display: none;
+        padding: 0;
+    }
+    /* ----- Fine Footer ------*/
+
+    /* ----- Galleria ------*/
+    .gallery-container {
+        padding: 0;
     }
 
-    footer .col-md-4 {
-        margin-top: 25px;
+    .carousel__thumbnails li {
+        margin: 0 5px;
     }
 
-    /* ---------- Fine Footer -----------*/
-    /* -------------- FINE INDEX -------------- */
+    section.gallery-section.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    .carousel > input {
+        margin-top: 0;
+    }
+    /* ----- Fine Galleria ------*/
 
-    /* -------------- CHI SIAMO -------------- */
-    section.la-nostra-storia ul li {
+    /* ----- Allevamento ----- */
+    iframe.maps {
+        margin-top: 40px;
+        width: 97vw;
+    }
+    /* ----- Fine Allevamento ----- */
+    
+    /* ----- Privacy Policy ----- */
+    div.privacy-policy h1 {
+        font-size: 20px;
+    }
+    div.privacy-policy h2, div.privacy-policy h3 {
         font-size: 18px;
-        margin-left: 30px;
+        text-align: center;
     }
 
+    div.privacy-policy p.lead {
+        text-align: center;
+    } 
 
-    /* -------------- FINE CHI SIAMO -------------- */
+    div.privacy-policy p {
+        font-size: 16px;
+    }
+    /* ----- Fine Privacy Policy ----- */
+}
+
+
+
+/*  -------------------- Smartphones in portrait mode  -------------------- */
+
+@media only screen and (max-width: 420px) {
+
+    /*----- PreNav ------ */
+    .pre-nav .left ul {
+        text-align: center;
+    }
+
+    .pre-nav .left ul li {
+        padding: 0 10px;
+    }
+
+    .pre-nav .right {
+        display: none;
+      }
+    /*----- Fine PreNav ------ */
 
 
 
 }
+
+

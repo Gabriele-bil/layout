@@ -18,32 +18,32 @@ $(document).ready(function () {
     );
 
     /* Hover link Nav */
-    var spanCircle = $("<span class='circle-decoration'></span>")
-    $("nav ul li a").hover(
-        function () {
-            $(this).append(spanCircle);
-        },
-        function () {
-            $("span").remove(".circle-decoration")
-        }
-    );
-
+    if ($(window).width()>768) {
+        var spanCircle = $("<span class='circle-decoration'></span>")
+        $("nav ul li a").hover(
+            function () {
+                $(this).append(spanCircle);
+            },
+            function () {
+                $("span").remove(".circle-decoration")
+            }
+        );
+    }
 
     /* Hamburgher Menù Responsive */
+    var isOpenMenu = false;
     $("button.hamburgher-menu img").click(function () {
         $("div.nav-responsive").slideToggle();
-    });
-
-/*
-     Magnific-Popup 
-    $(".gallery").magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
+        $('div.carousel').finish();
+        if (!isOpenMenu) {
+            $('div.carousel').animate({marginTop: '225px', transition: '0.2 ease-in-out'});
+            $('div.hero').animate({marginTop: '225px', transition: '0.2 ease-in-out'});
+        }else {
+            $('div.carousel').animate({marginTop: '0', transition: '0.2 ease-in-out'});
+            $('div.hero').animate({marginTop: '0', transition: '0.2 ease-in-out'});
         }
-    }); 
-*/
+        isOpenMenu = !isOpenMenu;
+    });
 
     /* Carousel Gallery Thumb Image Border */
     $('ul.carousel__thumbnails li').click(function() {
