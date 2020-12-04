@@ -140,6 +140,10 @@ main h1 {
   text-align: center;
   text-decoration: underline #A07473;
 }
+
+button:focus {
+  outline: 0px !important;
+}
 /* ---------- Hero -----------*/
 div.hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
