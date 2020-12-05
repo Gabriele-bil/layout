@@ -1,0 +1,59 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /errors
+
+User-agent: *
+Disallow: /436603625
+
+User-agent: *
+Disallow: /436187540
+
+User-agent: *
+Disallow: /436187555
+
+User-agent: *
+Disallow: /440192442
+
+User-agent: *
+Disallow: /440191657
+
+User-agent: *
+Disallow: /440192455
+
+User-agent: *
+Disallow: /440191670
+
+User-agent: *
+Disallow: /4401911664
+
+User-agent: *
+Disallow: /440191663
+
+User-agent: *
+Disallow: /436603625?i=153383414
+
+User-agent: *
+Disallow: /440191740
+
+User-agent: *
+Disallow: /436603426
+
+User-agent: *
+Disallow: /436837411
+
+User-agent: *
+Disallow: /436603625?i=140199061
+
+User-agent: *
+Disallow: /440191660
+
+User-agent: *
+Disallow: /436603625?i=143306036
+
+User-agent: *
+Disallow: /436603625?i=140199014
+
+User-agent: *
+Disallow: /436603625?i=140199731
