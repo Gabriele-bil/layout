@@ -401,7 +401,7 @@ section.call-widget {
 section.parallax {
   margin-top: 100px;
   height: 500px;
-  background-image: url("../img/caprette-saanen-6.jpg");
+  background-image: url("../img/caprette-saanen-6.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -512,7 +512,7 @@ footer .contatti ul li i {
 /* ------------------------------ ALLEVAMENTO ------------------------------ */
 /* ---------- Hero ---------- */
 div.hero.allevamento {
-  background-image: url("../img/mungitura-capre-saanen.jpg");
+  background-image: url("../img/mungitura-capre-saanen.webp");
 }
 
 /* ---------- Fine Hero ---------- */
@@ -544,7 +544,7 @@ iframe.maps {
 /* ------------------------------ GALLERIA ------------------------------ */
 /* ---------- Hero ---------- */
 div.hero.galleria {
-  background-image: url("../img/caprette-saanen-2.jpg");
+  background-image: url("../img/caprette-saanen-2.webp");
 }
 /* ---------- Fine Hero ---------- */
 
@@ -587,7 +587,7 @@ section.la-nostra-storia ul li {
 
 /* ------------------------------ CONTATTACI ------------------------------ */
 div.hero.contattaci {
-  background-image: url("../img/caprette-saanen-6.jpg");
+  background-image: url("../img/caprette-saanen-6.webp");
 }
 /* ----- Info ----- */
 section.form div.info {
